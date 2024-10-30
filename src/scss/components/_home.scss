@@ -1,0 +1,175 @@
+/* General styling for the grid */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 80px 150px;
+  justify-content: space-around;
+
+  @media (max-width:768px) {
+    padding: 20px;
+  }
+}
+
+/* Base styling for all project containers */
+.project-column {
+  flex: 1 1 auto;
+  min-width: 200px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+/* Project image styling */
+.project-image-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-image-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+
+/* Flex container for project grid */
+.projects-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+/* Styling for each main column */
+.column {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+
+  @media (max-width:768px) {
+    flex-direction: column;
+  }
+}
+
+/* Column 1 with two stacked project items */
+.column-1 .project-column-1 {
+  width: 45%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+
+  @media (max-width:968px) {
+    width: 100%;
+  }
+}
+
+.column-1 .project-column-2 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  p {
+    display: flex;
+  }
+
+  @media (max-width:968px) {
+    width: 100%;
+  }
+}
+
+/* Column 2 with a single centered item */
+.column-2 {
+  justify-content: center; /* Center item vertically */
+  padding: 80px 0;
+}
+
+.column-2 .project-column-3 {
+  width: 50%;
+  display: flex;
+  padding: 50px;
+  margin: 0 auto;
+  align-items: flex-end;
+  @media (max-width:968px) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Column 3 with two items positioned with space variation */
+.column-3 .project-column-4 {
+  width: 55%;
+  display: flex;
+  align-items: flex-end;
+  @media (max-width:968px) {
+    width: 100%;
+  }
+}
+
+.column-3 .project-column-5 {
+  margin-top: 15vh; /* Additional spacing for staggered effect */
+  width: 45%;
+  @media (max-width:968px) {
+    width: 100%;
+    margin: 0;
+  }
+}
+/* Column 3 with two items positioned with space variation */
+.column-4 .project-column-7 {
+  width: 35%;
+  display: flex;
+  align-items: flex-end;
+  @media (max-width:968px) {
+    width: 100%;
+  }
+}
+
+.column-4 .project-column-8 {
+  margin-top: 15vh; /* Additional spacing for staggered effect */
+  width: 45%;
+  display: flex;
+  margin-bottom: 6vh;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column-reverse;
+  @media (max-width:968px) {
+    width: 100%;
+    margin: 0;
+  }
+}
+/* Project column base styles */
+.project-column {
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-column p {
+  margin: 10px 0;
+}

@@ -1,0 +1,111 @@
+/* src/components/ProjectPage.css */
+
+.project-page {
+  padding: 2rem;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+
+.project-grid {
+  display: flex;
+  flex-direction: row; /* Display blocks (rows) in a column */
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:768px) {
+  .project-card .image-containerr {
+  width: 100%;
+  height: auto;
+  }
+}
+
+.project-block-a {
+  display: flex;
+  flex-direction: column; /* Images within each block will be stacked vertically */
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 600px; /* Limits the width of each block */
+}
+
+.project-block-b {
+  display: flex;
+  flex-direction: column; /* Images within each block will be stacked vertically */
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 600px; /* Limits the width of each block */
+}
+
+.project-block-b .project-card{
+  align-items: flex-start;
+
+  @media (max-width:768px) {
+    padding: 0 25px;
+  }
+}
+
+.project-block-a .project-card{
+  align-items: flex-end;
+  padding: 25px;
+
+  @media (max-width:768px) {
+    padding: 0 25px;
+  }
+}
+
+.project-card {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-containerr {
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+}
+
+.project-image {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-category {
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  color: black;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.project-card:hover .project-category {
+  opacity: 1;
+}
+
+.project-title {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}

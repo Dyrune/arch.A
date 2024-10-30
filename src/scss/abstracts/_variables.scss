@@ -1,0 +1,19 @@
+// src/styles/_variables.scss
+
+// Theme variables
+$light-bg-color: #ffffff;
+$light-text-color: #444;
+
+$dark-bg-color: #000;
+$dark-text-color: #ffffff;
+
+// Font variables
+$body-font: 'Pairot One', sans-serif;
+$header-font: all-round-gothic, sans-serif;
+
+@font-face {
+    font-family: all-round-gothic, sans-serif;
+    src: url("https://use.typekit.net/qmv2bju.css") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

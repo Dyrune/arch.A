@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  position: relative;
+  
+  @media (max-width: 768px) {
+    justify-content: space-between;
+  }
+
+
+  .logo {
+    font-size: 1.5em;
+    text-align: center;
+    flex: 1;
+
+    @media (max-width: 768px) {
+      flex: none;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    gap: 15px;
+    position: absolute;
+    top: 100%;
+    right: 50px;
+    align-items: flex-end;
+    
+    a {
+      color: var(--text-color);
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide on smaller screens */
+  }
+}
+
+
+/* Optional: Adjust the logo style */
+.logo-animation {
+  width: 100px;
+  height: auto;
+}
+
+/* Header.css */
+.nav-links .active-link {
+  font-weight: bold; /* Optional: to make the active link stand out */
+}
+
+.nav-links:hover {
+color: darkgrey;
+}

@@ -1,0 +1,130 @@
+/* src/scss/components/_contact.scss */
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+
+    @media (max-width:1025px) {
+      flex-direction: column;
+      height: 80vh;
+      justify-content: center;
+    }
+  
+    .image-sliders {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+
+      @media (max-width:1025px) {
+        flex-direction: column;
+        height: 80vh;
+        justify-content: center;
+      }
+
+      @media (max-width:768px) {
+        display: none;
+      }
+  
+      .slider-row {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+  
+      .slider-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+
+
+  @media (max-width:1025px) {
+    
+  .coco {
+    padding: 50px 0px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width:768px) {
+      width: 100%;
+    }
+  }
+  
+  }
+
+/* Contact Form Container */
+.contact-form {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0; /* Centered form */
+}
+
+/* Contact Info in Columns */
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 20px; /* Space between items */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1em;
+
+  @media (max-width:1025px) {
+    font-size: 0.8rem;
+  }
+}
+
+.contact-info li span p {
+  margin: 10px;
+}
+
+
+/* Responsive Design: Stack items in a single column on smaller screens */
+@media (max-width: 600px) {
+  .contact-info {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 15px;
+  }
+}
+
+  .social-icons {
+    display: flex;
+    gap: 30px;
+    padding: 15px;
+    width: fit-content;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 4px 9px lightgray;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    color: --text-color;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+  
+  .contact div div h2 {
+    font-size: 2rem;
+    width: 350px;
+  }

@@ -1,0 +1,116 @@
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+
+@import "components/header";
+@import "components/home";
+@import "components/project";
+@import "components/about";
+@import "components/contact";
+@import "components/hamburgermenu";
+@import "components/projectdetails";
+@import "components/loader";
+@import "components/footer";
+// src/styles/styles.scss
+/* At the top of your main CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+
+:root {
+    --bg-color: #{$light-bg-color};
+    --text-color: #{$light-text-color};
+    --body-font: #{$body-font};
+    --header-font: #{$header-font};
+      overflow-x: hidden;
+}
+
+[data-theme="dark"] {
+    --bg-color: #{$dark-bg-color};
+    --text-color: #{$dark-text-color};
+}
+
+// Apply global styles
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+@font-face {
+    font-family: 'All Round Gothic';
+    src: url("https://use.typekit.net/qmv2bju.css") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+p {
+    font-family: 'Poiret One', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+header {
+    font-family: var(--header-font);
+}
+
+h1, h2, h3, h4, h5, h6, div {
+    font-family: $header-font;
+}
+
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  
+    .theme-toggle-btn {
+      padding: 8px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      color: var(--text-color);
+      font-size: 1.5em;
+    }
+  }
+  .icon:hover {
+    color: gray;
+  }/* Initial state for all animation elements */
+.animation-element {
+    opacity: 0; /* Start fully transparent */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  /* Sliding left with a smooth fade */
+  .animation-element.slide-left {
+    transform: translate3d(-200px, 0, 0); /* Initial slide-left position */
+  }
+  
+  .animation-element.slide-left.in-view {
+    opacity: 1; /* Fade in */
+    transform: translate3d(0, 0, 0); /* Slide to original position */
+  }
+  
+  /* Sliding right with a smooth fade */
+  .animation-element.slide-right {
+    transform: translate3d(200px, 0, 0); /* Initial slide-right position */
+  }
+  
+  .animation-element.slide-right.in-view {
+    opacity: 1; /* Fade in */
+    transform: translate3d(0, 0, 0); /* Slide to original position */
+  }
+  
+  /* Sliding up with a smooth fade */
+  .animation-element.slide-up {
+    transform: translate3d(0, 200px, 0); /* Initial slide-up position */
+  }
+  
+  .animation-element.slide-up.in-view {
+    opacity: 1; /* Fade in */
+    transform: translate3d(0, 0, 0); /* Slide to original position */
+  }
+  
+.nav-links a {
+    opacity: 1;
+}

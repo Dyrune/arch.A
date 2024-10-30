@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { FaInstagram, FaLinkedin, FaTwitter, FaUpwork, FaEnvelope } from 'react-icons/fa'; // Import Font Awesome icons
+import { FaInstagram, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa'; // Import Font Awesome icons
 import { SiUpwork } from 'react-icons/si';
 
 function Footer() {

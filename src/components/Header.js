@@ -121,7 +121,7 @@ function Header({ darkMode }) {
           style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
           onClick={handleNavLinkClick}
         >
-          Academics & Research
+          Academics
         </NavLink>
       </nav>
       

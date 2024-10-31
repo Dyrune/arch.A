@@ -16,7 +16,9 @@
 /* At the top of your main CSS file */
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
-
+html{
+  scroll-behavior: smooth;
+}
 :root {
     --bg-color: #{$light-bg-color};
     --text-color: #{$light-text-color};
@@ -78,7 +80,7 @@ h1, h2, h3, h4, h5, h6, div {
   }/* Initial state for all animation elements */
 .animation-element {
     opacity: 0; /* Start fully transparent */
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transition: opacity 2s ease-in-out, transform 1.5s ease-in-out;
   }
   
   /* Sliding left with a smooth fade */

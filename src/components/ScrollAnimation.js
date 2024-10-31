@@ -36,3 +36,6 @@ export function initializeScrollAnimation() {
     $window.off('scroll resize', checkIfInView);
   };
 }
+
+
+

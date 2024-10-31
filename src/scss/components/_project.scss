@@ -26,6 +26,55 @@
   width: 100%;
   height: auto;
   }
+
+  /* src/components/ProjectPage.css */
+
+/* Base style for animation elements */
+.animation-element {
+  opacity: 0;
+  transition: opacity 1.5s ease-out;
+}
+
+/* Define slower slide-in animations */
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animations based on the in-view class */
+@media (max-width: 768px) {
+  /* Alternate animations for each project card */
+
+  /* Even elements slide in from the right with a slower animation */
+  .project-block-a .project-card:nth-child(2n) .animation-element.in-view,
+  .project-block-b .project-card:nth-child(2n) .animation-element.in-view {
+    animation: slideInFromRight 1.5s ease-out forwards;
+  }
+
+  /* Odd elements slide in from the left with a slower animation */
+  .project-block-a .project-card:nth-child(2n+1) .animation-element.in-view,
+  .project-block-b .project-card:nth-child(2n+1) .animation-element.in-view {
+    animation: slideInFromLeft 1.5s ease-out forwards;
+  }
+}
+
 }
 
 .project-block-a {

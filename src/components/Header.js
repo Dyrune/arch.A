@@ -83,19 +83,48 @@ function Header({ darkMode }) {
       </div>
       {!isMobile ? (
         <nav className="nav-links">
-          <NavLink to="/" className="animation-element" activeClassName="active-link" onClick={handleNavLinkClick}>
-            Home
-          </NavLink>
-          <NavLink to="/about" className="animation-element" activeClassName="active-link" onClick={handleNavLinkClick}>
-            About
-          </NavLink>
-          <NavLink to="/projects" className="animation-element" activeClassName="active-link" onClick={handleNavLinkClick}>
-            Projects
-          </NavLink>
-          <NavLink to="/contact" className="animation-element" activeClassName="active-link" onClick={handleNavLinkClick}>
-            Contact
-          </NavLink>
-        </nav>
+        <NavLink 
+          to="/" 
+          className="animation-element" 
+          style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
+          onClick={handleNavLinkClick}
+        >
+          Photography
+        </NavLink>
+        <NavLink 
+          to="/projects" 
+          className="animation-element" 
+          style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
+          onClick={handleNavLinkClick}
+        >
+          Selected Works
+        </NavLink>
+        <NavLink 
+          to="/about" 
+          className="animation-element" 
+          style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
+          onClick={handleNavLinkClick}
+        >
+          About
+        </NavLink>
+        <NavLink 
+          to="/contact" 
+          className="animation-element" 
+          style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal'})} 
+          onClick={handleNavLinkClick}
+        >
+          Contact
+        </NavLink>
+        <NavLink 
+          to="/Academics" 
+          className="animation-element" 
+          style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
+          onClick={handleNavLinkClick}
+        >
+          Academics & Research
+        </NavLink>
+      </nav>
+      
       ) : (
         <>
           <button

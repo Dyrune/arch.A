@@ -35,23 +35,22 @@ const Hamburger = ({ state, swiperRef }) => {
   const line1 = useRef(null);
   const line2 = useRef(null);
   const line3 = useRef(null);
+  const line4 = useRef(null); // New ref for Contact
+  const line5 = useRef(null); // New ref for About 0tnda.
   const info = useRef(null);
 
   useEffect(() => {
     if (state.clicked === false) {
-      // Smooth closing animation
       gsap.to([reveal1.current, reveal2.current], {
         duration: 0.8,
         height: 0,
         ease: "power3.inOut",
         onComplete: () => {
-          // Hide the menu after the animation completes
           gsap.to(menuLayer.current, { css: { display: "none" } });
         }
       });
       staggerRevealClose(reveal2, reveal1);
     } else if (state.clicked === true || (state.clicked === true && state.initial === null)) {
-      // Smooth opening animation
       gsap.to(menuLayer.current, { css: { display: "block" } });
       gsap.to([reveal1.current, reveal2.current], {
         duration: 0,
@@ -60,13 +59,13 @@ const Hamburger = ({ state, swiperRef }) => {
       });
       staggerReveal(reveal1.current, reveal2.current);
       fadeInUp(info.current);
-      staggerText(line1.current, line2.current, line3.current);
+      staggerText(line1.current, line2.current, line3.current, line4.current, line5.current);
     }
   }, [state]);
 
   const handleLinkClick = (e, path) => {
     e.preventDefault();
-        navigate(path);
+    navigate(path);
     gsap.to([reveal1.current, reveal2.current], {
       duration: 0.8,
       height: 0,
@@ -76,7 +75,7 @@ const Hamburger = ({ state, swiperRef }) => {
       }
     });
   };
-  
+
   const goToContactSlide = (e) => {
     e.preventDefault();
     if (swiperRef.current?.swiper) {
@@ -102,18 +101,28 @@ const Hamburger = ({ state, swiperRef }) => {
                       ref={line1}
                       onClick={(e) => handleLinkClick(e, "/about")}
                     >
-                      About Info
+                      Biography
                     </a>
                   </li>
                   <li>
                     <a
-                      href="/project"
+                      href="/projects"
                       onMouseEnter={handleHover}
                       onMouseOut={handleHoverExit}
                       ref={line2}
                       onClick={(e) => handleLinkClick(e, "/projects")}
                     >
-                      Project
+                      Selected Work
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/"
+                      onMouseEnter={handleHover}
+                      onMouseOut={handleHoverExit}
+                      ref={line3}
+                    >
+                      Photography
                     </a>
                   </li>
                   <li>
@@ -121,9 +130,21 @@ const Hamburger = ({ state, swiperRef }) => {
                       href="/contact"
                       onMouseEnter={handleHover}
                       onMouseOut={handleHoverExit}
-                      ref={line3}
+                      ref={line4}
+                      onClick={goToContactSlide}
                     >
-                      Contact Me
+                      Contact
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/Academics"
+                      onMouseEnter={handleHover}
+                      onMouseOut={handleHoverExit}
+                      ref={line5}
+                      onClick={(e) => handleLinkClick(e, "/0tnda")}
+                    >
+                      Academics & Research.
                     </a>
                   </li>
                 </ul>
@@ -138,7 +159,7 @@ const Hamburger = ({ state, swiperRef }) => {
                 </p>
               </div>
               <div className="locations">
-               Locations:
+                Locations:
                 {cities.map((city) => (
                   <span
                     key={city.name}

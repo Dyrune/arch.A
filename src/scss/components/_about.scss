@@ -27,10 +27,19 @@
       max-width: 800px;
       width: 100%;
       margin-bottom: 2rem;
+
+      @media (max-width: 1025px) {
+        max-width: none;
+        width: auto;
+        padding: 60px;
+      }
   
       @media (max-width: 768px) {
         flex-direction: column;
+        padding: 0;
         align-items: center;
+
+
       }
     }
 
@@ -43,11 +52,9 @@
 
       @media (max-width:1025px) {
         flex-direction: column;
-      }
-
-      @media (max-width:768px) {
         padding: 0;
       }
+
 
       .abt {
     display: flex;
@@ -57,11 +64,18 @@
     @media (max-width:768px) {
       padding: 10px;
     }
+    @media (max-width:1025px) {
+      padding: 30px 0;
+    }
       }
       
     blockquote {
-        margin: 0;
-        font-family: 'Poiret One', sans-serif;
+      font-family: 'Babylonica', system-ui !important;
+      font-size: 1.5rem;
+      /* color: #333; */
+      line-height: 01;
+      font-weight: 200;
+      margin: 0;
     }
 
     h3 {
@@ -88,7 +102,7 @@
       flex-direction: column;
       gap: 1rem;
       
-      @media (max-width:768px) {
+      @media (max-width:1025px) {
         padding: 0;
         
       }
@@ -96,7 +110,6 @@
       .about-quote {
         font-size: 1.5rem;
         font-weight: bold;
-        color: #555;
         margin: 0;
       }
   
@@ -134,6 +147,10 @@
         }
       }
     }
+  }
+
+  .about-name {
+    padding: 10px 0;
   }
 
     .quote-marks {

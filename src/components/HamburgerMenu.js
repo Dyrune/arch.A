@@ -138,7 +138,7 @@ const Hamburger = ({ state, swiperRef }) => {
                   </li>
                   <li>
                     <a
-                      href="/Academics"
+                      href="/academics"
                       onMouseEnter={handleHover}
                       onMouseOut={handleHoverExit}
                       ref={line5}

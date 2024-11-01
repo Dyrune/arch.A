@@ -1,9 +1,9 @@
-// src/components/About.js
+// src/components/biography.js
 
 import React, { useEffect } from 'react';
 import { initializeScrollAnimation } from './ScrollAnimation';
 
-const About = () => {
+const Biography = () => {
   useEffect(() => {
     const cleanupScrollAnimation = initializeScrollAnimation();
 
@@ -14,10 +14,10 @@ const About = () => {
   }, []); // Runs only once when the component mounts
 
   return (
-    <section id="about" className="about">
-      <div className="about-content">
+    <section id="biography" className="biography">
+      <div className="biography-content">
         {/* Left column with profile image */}
-        <div className="about-image">
+        <div className="biography-image">
           <div>
             <img
               src="https://plus.unsplash.com/premium_photo-1727894730957-e714035b458e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -26,17 +26,17 @@ const About = () => {
             />
           </div>
           <div className="abt">
-            <blockquote className="about-quote animation-element slide-right">
+            <blockquote className="biography-quote animation-element slide-right">
               <span className="quote-marks">“</span>Having some positive, inspirational and motivational quotes handy is a great way to remind ourselves not to get too caught up in the vagaries of life. These help keep us motivated when we face challenges to our spiritual awakening.<span className="quote-marks">”</span>
             </blockquote>
-            <h3 className="about-name  animation-element slide-right">John Doe</h3>
+            <h3 className="biography-name  animation-element slide-right">John Doe</h3>
           </div>
         </div>
 
         {/* Right column with details */}
-        <div className="about-details animation-element slide-right">
+        <div className="biography-details animation-element slide-right">
           {/* Biography */}
-          <div className="about-bio animation-element slide-up">
+          <div className="biography-bio animation-element slide-up">
             <p>
               John Doe is an experienced professional in [Your Industry/Field].
               With a passion for innovation and a commitment to excellence, John has
@@ -50,7 +50,7 @@ const About = () => {
           </div>
 
           {/* Education and Research sections */}
-          <div className="about-education animation-element slide-left">
+          <div className="biography-education animation-element slide-left">
             <h4>Education</h4>
             <ul>
               <li>Bachelor's Degree in [Field] - [University]</li>
@@ -58,7 +58,7 @@ const About = () => {
             </ul>
           </div>
 
-          <div className="about-research animation-element slide-right">
+          <div className="biography-research animation-element slide-right">
             <h4>Research</h4>
             <ul>
               <li>Research on [Research Topic 1]</li>
@@ -71,4 +71,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Biography;

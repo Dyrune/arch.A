@@ -258,7 +258,7 @@ const projects = [
         imgSrc: "https://images.pexels.com/photos/4064838/pexels-photo-4064838.jpeg?auto=compress&cs=tinysrgb&w=600",
         description: "Mobile app design project for Ecovative, a sustainable products company focusing on eco-friendly materials.",
         detailedDescription: `
-          Ecovative needed a mobile app that would educate users about sustainable materials and eco-friendly products. The app features include:
+          Ecovative needed a mobile app that would educate users biography sustainable materials and eco-friendly products. The app features include:
           - A product catalog showcasing eco-friendly alternatives.
           - An educational section with blogs and videos.
           - A community forum for discussions on sustainability.

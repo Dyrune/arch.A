@@ -77,7 +77,7 @@
 .column-1 .project-column-1 {
   width: 45%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: flex-start;
   flex-direction: column-reverse;
 
@@ -89,6 +89,7 @@
 .column-1 .project-column-2 {
   width: 30%;
   display: flex;
+  margin-top: 42px;
   flex-direction: column;
   align-items: flex-end;
   p {

@@ -3,10 +3,13 @@ import React from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
-import { MdDarkMode, MdLightMode } from 'react-icons/md'; // Import the icons here
+import { MdDarkMode, MdLightMode } from 'react-icons/md'; // Import icons
 
 function Layout({ darkMode, toggleTheme }) {
   const location = useLocation();
+
+  // Determine pages where the footer should not appear
+  const hideFooter = location.pathname === '/academics' || location.pathname === '/contact';
 
   return (
     <div className="App">
@@ -24,7 +27,7 @@ function Layout({ darkMode, toggleTheme }) {
       <Outlet />
 
       {/* Conditionally Render Footer */}
-      {location.pathname !== '/contact' && <Footer />}
+      {!hideFooter && <Footer />}
     </div>
   );
 }

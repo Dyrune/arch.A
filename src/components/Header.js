@@ -84,6 +84,39 @@ function Header({ darkMode }) {
       {!isMobile ? (
         <nav className="nav-links">
         <NavLink 
+          to="/about" 
+          className="animation-element" 
+          style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
+          onClick={handleNavLinkClick}
+        >
+          About 
+        </NavLink>
+        <NavLink 
+          to="/biography" 
+          className="animation-element" 
+          style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
+          onClick={handleNavLinkClick}
+        >
+          biography
+        </NavLink>
+        <NavLink 
+  to="/academics" 
+  className="animation-element" 
+  style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
+  onClick={handleNavLinkClick}
+>
+  Academics
+</NavLink>
+
+        <NavLink 
+          to="/projects" 
+          className="animation-element" 
+          style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
+          onClick={handleNavLinkClick}
+        >
+          Projects
+        </NavLink>
+        <NavLink 
           to="/" 
           className="animation-element" 
           style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
@@ -92,36 +125,12 @@ function Header({ darkMode }) {
           Photography
         </NavLink>
         <NavLink 
-          to="/projects" 
-          className="animation-element" 
-          style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
-          onClick={handleNavLinkClick}
-        >
-          Selected Works
-        </NavLink>
-        <NavLink 
-          to="/about" 
-          className="animation-element" 
-          style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
-          onClick={handleNavLinkClick}
-        >
-          About
-        </NavLink>
-        <NavLink 
           to="/contact" 
           className="animation-element" 
           style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal'})} 
           onClick={handleNavLinkClick}
         >
           Contact
-        </NavLink>
-        <NavLink 
-          to="/Academics" 
-          className="animation-element" 
-          style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
-          onClick={handleNavLinkClick}
-        >
-          Academics
         </NavLink>
       </nav>
       

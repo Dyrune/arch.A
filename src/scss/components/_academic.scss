@@ -1,0 +1,293 @@
+/* src/components/Academic.css */
+.academic-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .academic-links {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+  }
+  
+  .academic-item {
+    position: relative;
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .academic-image {
+    width: 100%;
+  }
+  
+  
+  .academic-item:hover .overlay {
+    opacity: 1;
+  }
+  
+  .academic-subsection {
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+
+  
+ 
+  .academic-item .overlayy {
+    
+    left: -60px !important;
+  }
+
+.project-item .overlayy,
+.research-item .overlayy {
+    position: absolute;
+    left: -30px;
+    right: 0;
+    display: flex;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    width: 100%;
+    color: black;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    clip-path: polygon(100% 0%, 100% 100%, 20% 100%, 0% 0%);
+
+}
+
+.academic-item .overlayy {
+    position: absolute;
+    left: -30px;
+    right: 0;
+    display: flex;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    width: 100%;
+    color: black;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0px;
+    transition: opacity 0.3s ease;
+    clip-path: polygon(100% 0%, 100% 100%, 20% 100%, 0% 0%);
+}
+
+
+.academic-item:hover .overlayy,
+.project-item:hover .overlayy,
+.research-item:hover .overlayy {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.overlayy h3{
+    margin: 10px;
+    font-size: 1rem;
+}
+
+.overlayy h2 {
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+
+.academic-item .overlayy .arrow {
+    padding: 5px;
+    font-size: 2rem;
+    animation: breathing 1.5s ease-in-out infinite; 
+    transform: rotate(90deg);
+    display: flex;justify-content: center;
+    align-items: center;
+    opacity: 1 !important;
+}
+
+  .project-item:hover .overlayy, .research-item:hover .overlayy {
+    opacity: 1;
+  }
+
+  .project-item:hover .arrow {
+    text-decoration: underline;
+  }
+
+  .nt2 .arrow {
+    padding: 15px;
+}
+
+  .nt2 .arrow p {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+    
+
+  
+  
+  /* src/components/Academic.scss */
+
+.academic-page, .project-section, .research-section {
+    opacity: 1;
+  
+    &.fade-out {
+      animation: fadeOut 2s ease forwards; // Fades out over 2 seconds
+    }
+  
+    &.fade-in {
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards; // Fades in over 1.5 seconds
+      animation-delay: 0.5s; // Delays fade-in for smooth sequence
+    }
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+
+  .project-item a div p:first-child {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.1;
+    margin: 5px;
+  }
+
+  .project-item .nt2 {
+    color: var(--text-color);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lecturer, .type {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .back-button {
+    position: fixed;
+    bottom: 20px;  /* Distance from the bottom of the page */
+    left: 20px;    /* Distance from the left side of the page */
+    font-size: 1em;
+    padding: 10px 0px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Keeps the button on top of other elements */
+  }
+  
+  .back-button:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+  }
+  
+
+  
+  @keyframes breathing {
+    0%, 100% {
+      transform: scale(1) rotate(90deg); /* Maintain the slant in animation */
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2) rotate(90deg); /* Enlarge slightly with slant */
+      opacity: 0.8; /* Reduces opacity slightly for a subtle effect */
+    }
+  }
+
+.project-section {
+/* Default filter for images in light mode */
+padding: 0 100px;
+.project-image, .research-image {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%); /* Start in black and white in light mode */
+    transition: filter 0.3s ease;
+  }
+  
+  /* Remove grayscale filter when in dark mode */
+  [data-theme="dark"] .project-image,
+  [data-theme="dark"] .research-image {
+    filter: none; /* Normal color in dark mode */
+  }
+  
+  /* On hover, turn grayscale in dark mode */
+  [data-theme="dark"] .project-item:hover .project-image,
+  [data-theme="dark"] .research-item:hover .research-image {
+    filter: grayscale(100%); /* Turns black and white on hover in dark mode */
+  }
+  
+  /* On hover in light mode, remove grayscale to show full color */
+  .project-item:hover .project-image,
+  .research-item:hover .research-image {
+    filter: grayscale(0%); /* Shows color on hover in light mode */
+  }
+}
+
+
+.project-items, .research-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two items per row */
+    gap: 150px; /* Space between items, adjust as needed */
+    padding: 0px 150px 70px;
+  }
+  
+
+
+/* Responsive layout for smaller screens */
+@media (max-width: 1200px) {
+    .project-items, .research-items {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      gap: 100px;
+      padding: 0 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .project-items, .research-items {
+      grid-template-columns: 1fr; /* 1 column */
+      gap: 50px;
+      padding: 0 40px;
+    }
+  }
+  .project-item, .research-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .project-item {
+    margin: 0 22px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+@media (max-width: 768px) {
+  .project-items, .research-items {
+    padding: 0 20px 10vh 20px; /* Less padding on the smallest screens */
+  }
+
+  .project-item, .research-item {
+    margin: 0; /* Remove margin on very small screens */
+  }
+}

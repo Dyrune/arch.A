@@ -99,117 +99,118 @@ function Contact() {
       </div>
 
       <div className="image-sliders">
-        {/* First Row: 1 Swiper container */}
-        <div className="slider-row">
-        <Swiper
-            modules={[Autoplay]}
-            spaceBetween={30}
-            slidesPerView={1}
-            direction="vertical"  // Set direction to "vertical"
-            loop={true}
-            autoplay={{ delay: 4500, disableOnInteraction: false }}
-            speed={2000}
-            style={{ width: '150px', height: '320px' }}
-          >
-            {imagesSet1.map((imgSrc, index) => (
-              <SwiperSlide key={index}>
-                <img
-                  src={imgSrc}
-                  alt={`Slide ${index + 1}`}
-                  style={{ width: '100%', height: '300px', objectFit: 'cover' }}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+  {/* First Row: Standalone Swiper */}
+  <div className="slider-row">
+    <Swiper
+      modules={[Autoplay]}
+      spaceBetween={30}
+      slidesPerView={1}
+      direction="vertical"
+      loop={true}
+      autoplay={{ delay: 4500, disableOnInteraction: false }}
+      speed={2000}
+      style={{ width: '150px', height: '400px' }} // Set consistent height
+    >
+      {imagesSet1.map((imgSrc, index) => (
+        <SwiperSlide key={index}>
+          <img
+            src={imgSrc}
+            alt={`Slide ${index + 1}`}
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </div>
 
-        {/* Second Row: 2 Swiper containers side-by-side */}
-        <div className="slider-row">
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={20}
-            slidesPerView={1}
-            loop={true}
-            autoplay={{ delay: 3500, disableOnInteraction: false }}
-            speed={2000}
-            style={{ width: '150px', height: '100%' }}
-          >
-            {imagesSet2.map((imgSrc, index) => (
-              <SwiperSlide key={index}>
-                <img
-                  src={imgSrc}
-                  alt={`Slide ${index + 1}`}
-                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+  {/* Second Row: Middle Swiper Containers */}
+  <div className="slider-row">
+    <Swiper
+      modules={[Autoplay]}
+      spaceBetween={20}
+      slidesPerView={1}
+      loop={true}
+      autoplay={{ delay: 3500, disableOnInteraction: false }}
+      speed={2000}
+      style={{ width: '150px', height: '100%' }} // Leave unchanged
+    >
+      {imagesSet2.map((imgSrc, index) => (
+        <SwiperSlide key={index}>
+          <img
+            src={imgSrc}
+            alt={`Slide ${index + 1}`}
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
 
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={20}
-            slidesPerView={1}
-            loop={true}
-            autoplay={{ delay: 4300, disableOnInteraction: false }}
-            speed={2000}
-            style={{ width: '150px', height: '100%' }}
-          >
-            {imagesSet3.map((imgSrc, index) => (
-              <SwiperSlide key={index}>
-                <img
-                  src={imgSrc}
-                  alt={`Slide ${index + 1}`}
-                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+    <Swiper
+      modules={[Autoplay]}
+      spaceBetween={20}
+      slidesPerView={1}
+      loop={true}
+      autoplay={{ delay: 4300, disableOnInteraction: false }}
+      speed={2000}
+      style={{ width: '150px', height: '100%' }} // Leave unchanged
+    >
+      {imagesSet3.map((imgSrc, index) => (
+        <SwiperSlide key={index}>
+          <img
+            src={imgSrc}
+            alt={`Slide ${index + 1}`}
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </div>
 
-        {/* Third Row: 3 Swiper containers stacked vertically */}
-        <div className="slider-column">
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={20}
-            slidesPerView={1}
-            loop={true}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
-            speed={2000}
-            style={{ width: '150px', height: '200px' }}
-          >
-            {imagesSet4.map((imgSrc, index) => (
-              <SwiperSlide key={index}>
-                <img
-                  src={imgSrc}
-                  alt={`Slide ${index + 1}`}
-                  style={{ width: '100%', height: '200px', objectFit: 'cover' }}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+  {/* Third Row: Two Swiper Containers with Matching Height */}
+  <div className="slider-column">
+    <Swiper
+      modules={[Autoplay]}
+      spaceBetween={20}
+      slidesPerView={1}
+      loop={true}
+      autoplay={{ delay: 3000, disableOnInteraction: false }}
+      speed={2000}
+      style={{ width: '150px', height: '190px' }} // Match height with the first Swiper
+    >
+      {imagesSet4.map((imgSrc, index) => (
+        <SwiperSlide key={index}>
+          <img
+            src={imgSrc}
+            alt={`Slide ${index + 1}`}
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
 
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={20}
-            slidesPerView={1}
-            direction="vertical"  // Set direction to "vertical"
-            loop={true}
-            autoplay={{ delay: 3500, disableOnInteraction: false }}
-            speed={2000}
-            style={{ width: '150px', height: '200px' }}
-          >
-            {imagesSet5.map((imgSrc, index) => (
-              <SwiperSlide key={index}>
-                <img
-                  src={imgSrc}
-                  alt={`Slide ${index + 1}`}
-                  style={{ width: '100%', height: '200px', objectFit: 'cover' }}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </div>
+    <Swiper
+      modules={[Autoplay]}
+      spaceBetween={20}
+      slidesPerView={1}
+      direction="vertical"
+      loop={true}
+      autoplay={{ delay: 3500, disableOnInteraction: false }}
+      speed={2000}
+      style={{ width: '150px', height: '190px' }} // Match height with the first Swiper
+    >
+      {imagesSet5.map((imgSrc, index) => (
+        <SwiperSlide key={index}>
+          <img
+            src={imgSrc}
+            alt={`Slide ${index + 1}`}
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </div>
+</div>
+
     </section>
   );
 }

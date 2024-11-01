@@ -1,6 +1,6 @@
-// src/scss/components/_about.scss
+// src/scss/components/_biography.scss
 
-.about {
+.biography {
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@
       align-items: center;
     }
   
-    .about-content {
+    .biography-content {
       display: flex;
       flex-direction: column;
       gap: 2rem;
@@ -31,7 +31,7 @@
       @media (max-width: 1025px) {
         max-width: none;
         width: auto;
-        padding: 60px;
+        padding: 100px 60px 0 60px;
       }
   
       @media (max-width: 768px) {
@@ -43,7 +43,7 @@
       }
     }
 
-    .about-image {
+    .biography-image {
       flex: 1;
       display: flex;
       justify-content: center;
@@ -95,7 +95,7 @@
       }
     }
   
-    .about-details {
+    .biography-details {
       flex: 2;
       padding: 30px;
       display: flex;
@@ -107,27 +107,27 @@
         
       }
   
-      .about-quote {
+      .biography-quote {
         font-size: 1.5rem;
         font-weight: bold;
         margin: 0;
       }
   
-      .about-name {
+      .biography-name {
         font-size: 1.25rem;
         font-weight: bold;
         color: #333;
       }
   
-      .about-bio {
+      .biography-bio {
         p {
           font-size: 1rem;
           margin: 0.5rem 0;
         }
       }
   
-      .about-education,
-      .about-research {
+      .biography-education,
+      .biography-research {
         h4 {
           font-size: 1.1rem;
           font-weight: bold;
@@ -149,14 +149,14 @@
     }
   }
 
-  .about-name {
+  .biography-name {
     padding: 10px 0;
   }
 
     .quote-marks {
         font-weight: bolder;
     }
-.about-bio {
+.biography-bio {
     display: flex;
     @media (max-width:756px) {
     display: flex;
@@ -171,6 +171,6 @@
 }
 
 @media (max-width:756px) {
-.about-education, .about-research {
+.biography-education, .biography-research {
   padding: 10px;
 } }

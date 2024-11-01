@@ -36,7 +36,7 @@ const Hamburger = ({ state, swiperRef }) => {
   const line2 = useRef(null);
   const line3 = useRef(null);
   const line4 = useRef(null); // New ref for Contact
-  const line5 = useRef(null); // New ref for About 0tnda.
+  const line5 = useRef(null); // New ref for biography 0tnda.
   const info = useRef(null);
 
   useEffect(() => {
@@ -95,11 +95,11 @@ const Hamburger = ({ state, swiperRef }) => {
                 <ul>
                   <li>
                     <a
-                      href="/about"
+                      href="/biography"
                       onMouseEnter={handleHover}
                       onMouseOut={handleHoverExit}
                       ref={line1}
-                      onClick={(e) => handleLinkClick(e, "/about")}
+                      onClick={(e) => handleLinkClick(e, "/biography")}
                     >
                       Biography
                     </a>

@@ -12,8 +12,7 @@
 .project-grid {
   display: flex;
   flex-direction: row; /* Display blocks (rows) in a column */
-  gap: 2rem;
-  align-items: center;
+  gap: 4rem;
   justify-content: center;
 
   @media (max-width: 768px) {
@@ -103,7 +102,6 @@
 
 .project-block-a .project-card{
   align-items: flex-end;
-  padding: 25px;
 
   @media (max-width:768px) {
     padding: 0 25px;

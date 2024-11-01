@@ -147,7 +147,8 @@ function Academic() {
     {projectItems.map((project) => (
       <div key={project.id} className="project-item">
         <Link to={project.link}>
-          <img src={project.imgSrc} alt={project.title} className="project-image" />
+        <div style={{maxWidth: '350px'}}>
+          <img src={project.imgSrc} alt={project.title} className="project-image" /></div>
           <div className="overlayy">
           
             <h3>{project.title}</h3>

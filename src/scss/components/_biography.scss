@@ -84,8 +84,11 @@
   
       div {
        width: max-content; 
+       width: 50%;
+       padding-right: 30px;
        @media (max-width:1025px) {
         width: 100%;
+        padding: 0;
       }
       }
   

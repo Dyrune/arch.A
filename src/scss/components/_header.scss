@@ -11,13 +11,18 @@
 
 
   .logo {
-    font-size: 1.5em;
     text-align: center;
     flex: 1;
+    color: white;
 
     @media (max-width: 768px) {
       flex: none;
     }
+  }
+
+  .formstudio {
+    height: auto;
+    width: 10rem;
   }
 
   .nav-links {

@@ -1,0 +1,242 @@
+// src/components/Project1.scss
+.project-page {
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    h1 {
+      text-align: center;
+      margin: 0;
+    }
+  
+    hr {
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+  
+  .project-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+    .project-content {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      gap: 20px;
+      
+      .project-image {
+        width: 50%;
+      }
+      
+      .project-description {
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: left;
+      }
+    }
+  }
+  
+#ir img {
+    width: 23%;
+}
+
+  .inspiration-section {
+    text-align: center;
+    margin-top: 40px;
+  
+    h2 {
+      margin-bottom: 10px;
+    }
+  
+    .inspiration-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 40px;
+      margin: 20px 0;
+  
+      img {
+        width: 45%; // Adjusted for space between images
+        margin: 0 10px;
+      }
+      
+      .inspiration-images {
+        display: flex;
+        gap: 10px;
+      }
+  
+      .inspiration-description {
+        padding: 10px;
+        text-align: left;
+      }
+    }
+  }
+  
+  .planning-section {
+    text-align: center;
+    margin-top: 40px;
+  
+    h2 {
+      margin-bottom: 10px;
+    }
+  
+    .planning-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 20px 0;
+  
+      .planning-description {
+        width: 45%;
+        text-align: left;
+      }
+  
+      .planning-images-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 45%; // Matches the width of .planning-description
+  
+        img {
+          width: calc(100% / 3 - 10px); // Divides space into smaller images with a small gap
+          flex-grow: 1;
+        }
+      }
+  
+      img {
+        width: 45%;
+      }
+    }
+  }
+  
+.project-content .project-description {
+
+    
+p {
+    font-size: 1rem;
+}
+
+ul li {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+}
+
+
+
+
+/* Reflection Section */
+.reflection-content {
+    .reflection-description {
+      width: 65%;
+      text-align: left;
+    }
+  
+    .reflection-image {
+      width: 30%;
+    }
+  }
+  
+  /* Critique Section */
+  .critique-content {
+    display: flex;
+    gap: 20px;
+  
+    .critique-list {
+      width: 45%;
+      text-align: left;
+  
+      h3 {
+        margin-bottom: 10px;
+      }
+  
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+    }
+  
+    .critique-images {
+      display: flex;
+      flex-direction: column;
+      width: 45%;
+      gap: 10px;
+  
+      img {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  
+  /* Navigation Buttons */
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+  
+    .nav-button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #007BFF;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  
+    .left-button {
+      align-self: flex-start;
+    }
+  
+    .right-button {
+      align-self: flex-end;
+    }
+  }
+
+  .project-section .project-content,
+.reflection-section .reflection-content,
+.critique-section .critique-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-page .project-section {
+    padding: 0 0px;
+}
+
+#ir .inspiration-description p {
+    text-align: center;
+}
+
+.inspiration-description p {
+    text-align: right;
+}
+
+.hgr {
+    gap: 20px;
+}
+
+#hgr {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+}
+
+#hgr .planning-description {
+    text-align: right;
+    width: 75%;
+}

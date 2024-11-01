@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import Hamburger from './HamburgerMenu';
-import logoLight from '../images/logo_light.mp4';
-import logoDark from '../images/logo_dark.mp4';
+import logoLight from '../images/logo_light.PNG';
+import logoDark from '../images/logo_dark.png';
 import { initializeScrollAnimation } from './ScrollAnimation';
 
 function Header({ darkMode }) {
@@ -72,14 +72,8 @@ function Header({ darkMode }) {
   return (
     <header className="header">
       <div className="logo">
-        <video
-          ref={videoRef}
-          src={logo}
-          autoPlay
-          muted
-          className="logo-animation animation-element slide-up"
-          onEnded={handleVideoEnd}
-        />
+      <img src={logo} className='formstudio' alt="Planning Image 1" />
+            
       </div>
       {!isMobile ? (
         <nav className="nav-links">

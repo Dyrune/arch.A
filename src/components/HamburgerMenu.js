@@ -142,7 +142,7 @@ const Hamburger = ({ state, swiperRef }) => {
                       onMouseEnter={handleHover}
                       onMouseOut={handleHoverExit}
                       ref={line5}
-                      onClick={(e) => handleLinkClick(e, "/0tnda")}
+                      onClick={(e) => handleLinkClick(e, "/academics")}
                     >
                       Academics & Research.
                     </a>

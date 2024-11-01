@@ -1,9 +1,14 @@
-
+import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 
 
 
-function Project1() {
+function Project1() { const navigate = useNavigate();
+
+    const handleNavigate = () => {
+      navigate('/project2');
+    };
+    
     const [lightboxImage, setLightboxImage] = useState(null);
     const [showLightbox, setShowLightbox] = useState(false);
   
@@ -194,8 +199,8 @@ function Project1() {
       
       {/* Navigation Buttons */}
       <div className="navigation-buttons">
-        <button className="nav-button left-button">Go to Project 2</button>
-        <button className="nav-button right-button">Go to Project 4</button>
+        <button className="nav-button left-button">Go to Project 4</button>
+        <button className="nav-button right-button" onClick={handleNavigate}>Go to Project 2</button>
       </div>
       </section>
         {/* Lightbox Overlay */}

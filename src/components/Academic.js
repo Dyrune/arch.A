@@ -9,16 +9,19 @@ const projectItems = [
   {
     id: 1,
     title: "Bridge",
-    description: "A brief description of the research and a lot more to do than to say, click the link to check all i have about this project..",
+    description:
+      "A brief description of the research and a lot more to do than to say, click the link to check all i have about this project..",
     lecturer: "Dr. Professor Layi",
     type: "Research Project",
-    imgSrc: "https://images.pexels.com/photos/5706118/pexels-photo-5706118.jpeg",
+    imgSrc:
+      "https://images.pexels.com/photos/5706118/pexels-photo-5706118.jpeg",
     link: "/project1",
   },
   {
     id: 2,
     title: "Story decahome",
-    description: "A arch and a lot more to do than to say, click the link to check all i have a arch and a lot more to do than to say, click the link to check all i have ahe project.",
+    description:
+      "A arch and a lot more to do than to say, click the link to check all i have a arch and a lot more to do than to say, click the link to check all i have ahe project.",
     lecturer: "Dr. John Gredia",
     type: "Research Project",
     imgSrc:
@@ -28,7 +31,8 @@ const projectItems = [
   {
     id: 3,
     title: "Short Miles",
-    description: "A sarch and a lot more to do than to say, click the link to check all i have aject  than to say, click the link to check all i have aject.",
+    description:
+      "A sarch and a lot more to do than to say, click the link to check all i have aject  than to say, click the link to check all i have aject.",
     lecturer: "Dr. Mrs Alani",
     type: "Research Project",
     imgSrc:
@@ -38,7 +42,8 @@ const projectItems = [
   {
     id: 4,
     title: "Layi's Dawn",
-    description: " than to say, click the link to check all i have aject the project. click the link to check all i have aject the project. thank you very much and move on",
+    description:
+      " than to say, click the link to check all i have aject the project. click the link to check all i have aject the project. thank you very much and move on",
     lecturer: "Professor Mike Ross",
     type: "Research Project",
     imgSrc:
@@ -50,30 +55,36 @@ const projectItems = [
 const researchItems = [
   {
     id: 1,
-    title: "Research Title",
-    description: "A brief description of the research and a lot more to do than to say, click the link to check all i have about this project.",
-    lecturer: "Prof. Jane Smith",
-    type: "Publication",
-    imgSrc: "../images/research1.jpg",
-    link: "/research1",
+    title: "Bridge",
+    description:
+      "A brief description of the research and a lot more to do than to say, click the link to check all i have about this project..",
+    lecturer: "Dr. Professor Layi",
+    type: "Research Project",
+    imgSrc:
+      "https://images.pexels.com/photos/6827165/pexels-photo-6827165.jpeg",
+    link: "/project1",
   },
   {
     id: 2,
-    title: "Research Title",
-    description: "A brief description of the research.",
-    lecturer: "Prof. Jane Smith",
-    type: "Publication",
-    imgSrc: "../images/research2.jpg",
-    link: "/research2",
+    title: "Story decahome",
+    description:
+      "A arch and a lot more to do than to say, click the link to check all i have a arch and a lot more to do than to say, click the link to check all i have ahe project.",
+    lecturer: "Dr. John Gredia",
+    type: "Research Project",
+    imgSrc:
+      "https://images.pexels.com/photos/6826789/pexels-photo-6826789.jpeg",
+    link: "/project2",
   },
   {
     id: 3,
-    title: "Research Title",
-    description: "A brief description of the research.",
-    lecturer: "Prof. Jane Smith",
-    type: "Publication",
-    imgSrc: "../images/research3.jpg",
-    link: "/research3",
+    title: "Short Miles",
+    description:
+      "A sarch and a lot more to do than to say, click the link to check all i have aject  than to say, click the link to check all i have aject.",
+    lecturer: "Dr. Mrs Alani",
+    type: "Research Project",
+    imgSrc:
+      "https://images.pexels.com/photos/18362010/pexels-photo-18362010/free-photo-of-woman-in-hijab-shopping-for-t-shirts-in-store.jpeg",
+    link: "/project3",
   },
 ];
 
@@ -139,58 +150,87 @@ function Academic() {
       )}
 
       {/* Project section with fade-in effect */}
-      {selectedSection === "projects" && (<div className="project-section fade-in">
-  <div className="project-items">
+      {selectedSection === "projects" && (
+        <div className="project-section fade-in">
+          <div className="project-items">
+            <button className="back-button" onClick={handleBackClick}>
+              ← Back
+            </button>
 
-          <button className="back-button" onClick={handleBackClick}>← Back</button>
-
-    {projectItems.map((project) => (
-      <div key={project.id} className="project-item">
-        <Link to={project.link}>
-        <div style={{maxWidth: '350px'}}>
-          <img src={project.imgSrc} alt={project.title} className="projectt-image" /></div>
-          <div className="overlayy">
-          
-            <h3>{project.title}</h3>
+            {projectItems.map((project) => (
+              <div key={project.id} className="project-item">
+                <Link to={project.link}>
+                  <div style={{ maxWidth: "350px" }}>
+                    <img
+                      src={project.imgSrc}
+                      alt={project.title}
+                      className="projectt-image"
+                    />
+                  </div>
+                  <div className="overlayy">
+                    <h3>{project.title}</h3>
+                  </div>
+                  <div className="nt2">
+                    <p>{project.description}</p>
+                    <span className="lecturer">
+                      Led by: <p> {project.lecturer}</p>
+                    </span>
+                    <span className="type">
+                      Type: <p> {project.type}</p>
+                    </span>
+                    <a className="arrow">
+                      {" "}
+                      <p> View Project →</p>
+                    </a>
+                  </div>
+                </Link>
+              </div>
+            ))}
           </div>
-          <div className="nt2"> 
-            <p>{project.description}</p>
-             <span className="lecturer">Led by: <p> {project.lecturer}</p></span>
-            <span className="type">Type: <p> {project.type}</p></span>
-            <a className="arrow"> <p> View Project →</p></a></div>
-        </Link>
-      </div>
-    ))}
-  </div>
-</div>
+        </div>
       )}
 
       {/* Research section with fade-in effect */}
       {selectedSection === "research" && (
-      
-<div className="research-section fade-in">
-  <div className="research-items">
-    {researchItems.map((research) => (
-      <div key={research.id} className="research-item">
-        <Link to={research.link}>
-          <img src={research.imgSrc} alt={research.title} className="researchh-image" />
-          <div className="overlayy">
-            <h3>{research.title}</h3>
-            <p>{research.description}</p>
+        <div className="project-section fade-in">
+        <div className="project-items">
+          <button className="back-button" onClick={handleBackClick}>
+            ← Back
+          </button>
+            {researchItems.map((research) => (
+              <div key={research.id} className="project-item">
+                <Link to={research.link}>
+                  <div style={{ maxWidth: "350px" }}>
+                    <img
+                      src={research.imgSrc}
+                      alt={research.title}
+                      className="projectt-image"
+                    />
+                  </div>
+                  <div className="overlayy">
+                    <h3>{research.title}</h3>
+                  </div>
+                  <div className="nth2">
+                    <p>{research.description}</p>
+                    <span className="lecturer">
+                      Led by: <p> {research.lecturer}</p>
+                    </span>
+                    <span className="type">
+                      Type: <p> {research.type}</p>
+                    </span>
+                    <a className="arrow">
+                      {" "}
+                      <p> View Research →</p>
+                    </a>
+                  </div>
+                </Link>
+              </div>
+            ))}
           </div>
-          <div> <span className="lecturer">Led by: {research.lecturer}</span>
-            <span className="type">Type: {research.type}</span>
-            <a className="arrow"> <p> View Research →</p></a></div>
-        </Link>
-      </div>
-    ))}
-  </div>
-</div>
+        </div>
       )}
     </div>
   );
 }
 
 export default Academic;
-
-

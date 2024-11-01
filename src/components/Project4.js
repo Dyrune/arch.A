@@ -19,7 +19,7 @@ function Project4() {
 
   return (
     <div className="project-page">
-      <h1>Project 1</h1>
+      <h1>Project 4</h1>
       <hr />
 
 
@@ -192,8 +192,7 @@ function Project4() {
       
       {/* Navigation Buttons */}
       <div className="navigation-buttons">
-        <button className="nav-button left-button">Go to Project 2</button>
-        <button className="nav-button right-button">Go to Project 4</button>
+        <button className="nav-button left-button">Go to Project 3</button>
       </div>
       </section>
         {/* Lightbox Overlay */}

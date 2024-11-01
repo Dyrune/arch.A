@@ -19,30 +19,30 @@ function Project2() {
 
   return (
     <div className="project-page">
-      <h1>Project 1</h1>
+      <h1>Project 2</h1>
       <hr />
 
 
 
       <section className="project-section">
         <div className="project-content">
-          <img 
-            src="https://images.pexels.com/photos/6631793/pexels-photo-6631793.jpeg" 
-            alt="Project 1" 
-            className="project-image"            
-            onClick={() => handleImageClick("https://images.pexels.com/photos/6631793/pexels-photo-6631793.jpeg")}
           
-          />
-          <div className="project-description">
+          <div className="project-description" id='pro2-description'>
             <ul>
-                <li>Solitude</li>
+                <li>Borskey</li>
                 <li>156mm to 3879mm</li>
                 <li>Futa, University</li>
                 <li>Dr. Prof jobadadan</li>
                 <li>Completed</li>
             </ul>
             <p>This mixed media self-portrait contrast through the background with texture and shade. The smooth, colorful, person next to blank, textured, space; combined with all white hands.  </p>
-          </div>
+          </div><img 
+            src="https://images.pexels.com/photos/6631793/pexels-photo-6631793.jpeg" 
+            alt="Project 2" 
+            className="project-image"            
+            onClick={() => handleImageClick("https://images.pexels.com/photos/6631793/pexels-photo-6631793.jpeg")}
+          
+          />
         </div>
       </section>
 
@@ -192,8 +192,8 @@ function Project2() {
       
       {/* Navigation Buttons */}
       <div className="navigation-buttons">
-        <button className="nav-button left-button">Go to Project 2</button>
-        <button className="nav-button right-button">Go to Project 4</button>
+        <button className="nav-button left-button">Go to Project 1</button>
+        <button className="nav-button right-button">Go to Project 3</button>
       </div>
       </section>
         {/* Lightbox Overlay */}

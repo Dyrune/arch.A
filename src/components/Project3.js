@@ -21,7 +21,7 @@ function Project3() {
 
   return (
     <div className="project-page">
-      <h1>Project 1</h1>
+      <h1>Project 3</h1>
       <hr />
 
 

@@ -95,6 +95,17 @@ const Hamburger = ({ state, swiperRef }) => {
                 <ul>
                   <li>
                     <a
+                      href="/about"
+                      onMouseEnter={handleHover}
+                      onMouseOut={handleHoverExit}
+                      ref={line1}
+                      onClick={(e) => handleLinkClick(e, "/about")}
+                    >
+                      about
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="/biography"
                       onMouseEnter={handleHover}
                       onMouseOut={handleHoverExit}

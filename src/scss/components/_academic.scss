@@ -2,6 +2,7 @@
 .academic-page {
     text-align: center;
     padding: 20px;
+
   }
   
   .academic-links {
@@ -9,6 +10,11 @@
     justify-content: center;
     gap: 60px;
     margin-top: 40px;
+
+    @media (max-width:768px) {
+    align-items: center;
+    flex-direction: column;
+    }
   }
   
   .academic-item {
@@ -62,7 +68,6 @@
 }
 
 .project-section .project-items .project-item a {
-    text-decoration: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,7 +82,6 @@
     transform: rotate(-90deg);
     transform-origin: top left;
     width: 100%;
-    color: black;
     align-items: flex-start;
     justify-content: flex-end;
     padding: 0px;
@@ -91,6 +95,7 @@
 .research-item:hover .overlayy {
   opacity: 1; /* Show overlay on hover */
 }
+
 
 .overlayy h3{
     margin: 10px;
@@ -168,7 +173,6 @@
   
 
   .project-item a div p:first-child {
-    text-decoration: none;
     font-size: 1rem;
     line-height: 1.1;
     margin: 5px 0;
@@ -225,7 +229,13 @@
 .project-section {
 /* Default filter for images in light mode */
 padding: 0 100px;
-.project-image, .research-image {
+@media (max-width:768px) {
+    padding: 30px;
+}
+}
+
+
+.projectt-image, .researchh-image {
     width: 100%;
     height: auto;
     filter: grayscale(100%); /* Start in black and white in light mode */
@@ -233,30 +243,29 @@ padding: 0 100px;
   }
   
   /* Remove grayscale filter when in dark mode */
-  [data-theme="dark"] .project-image,
-  [data-theme="dark"] .research-image {
+  [data-theme="dark"] .projectt-image,
+  [data-theme="dark"] .researchh-image {
     filter: none; /* Normal color in dark mode */
   }
   
   /* On hover, turn grayscale in dark mode */
-  [data-theme="dark"] .project-item:hover .project-image,
-  [data-theme="dark"] .research-item:hover .research-image {
+  [data-theme="dark"] .project-item:hover .projectt-image,
+  [data-theme="dark"] .research-item:hover .researchh-image {
     filter: grayscale(100%); /* Turns black and white on hover in dark mode */
   }
   
   /* On hover in light mode, remove grayscale to show full color */
-  .project-item:hover .project-image,
-  .research-item:hover .research-image {
+  .project-item:hover .projectt-image,
+  .research-item:hover .researchh-image {
     filter: grayscale(0%); /* Shows color on hover in light mode */
   }
-}
 
 
 .project-items, .research-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two items per row */
     gap: 0px; /* Space between items, adjust as needed */
-    padding: 0px 100px 70px;
+    padding: 70px 100px 70px;
   }
   
 

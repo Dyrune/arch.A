@@ -85,36 +85,63 @@ function Project1() {
           <img src="https://plus.unsplash.com/premium_photo-1674815329488-c4fc6bf4ced8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Planning Image 6" />
           </div>
              </div>
+
+
          {/* Reflection Section */}
       <section className="reflection-section">
         <h2>Reflection</h2>
+        <hr />
         <div className="reflection-content">
           <div className="reflection-description">
-            <p>Reflection write-up goes here. This section provides a broader perspective on the project.</p>
+            <p>Overall I am very pleased with how this work turned out. While I would have liked to add one more hand and made the lips and jaw more accurate to my own features, I am proud of my own improvement since my last self-portrait. Here I show my growth in attention to detail and accuracy. Even though I did struggle with the painting aspect with making it true to real life in proportion and hue, the final work demonstrates my own advances in art making. I also think that this work is one of my most personal ones and one that I felt very connected to while making. Additionally I think my connections to artists Rodin and 
+            Gainsborough are faint but still apparent. Similar to ​Gainsborough's Portrait of Sarah Siddons I wanted to paint myself in the true way I am. In my other self-portrait I was putting myself in the place of another person not painting me, while here I was..</p>
           </div>
-          <img src="reflection-image.jpg" alt="Reflection Image" className="reflection-image" />
+          <img src="https://plus.unsplash.com/premium_photo-1671269942411-fa6815b5335f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Reflection Image" className="reflection-image" />
         </div>
       </section>
       
-      {/* Critique Section */}
-      <section className="critique-section">
-        <h2>Critique</h2>
-        <div className="critique-content">
-          <div className="critique-list">
-            <h3>Differences and Similarities</h3>
-            <ul>
-              <li>Difference 1</li>
-              <li>Difference 2</li>
-              <li>Similarity 1</li>
-              <li>Similarity 2</li>
-            </ul>
-          </div>
-          <div className="critique-images">
-            <img src="critique-image1.jpg" alt="Critique Image 1" />
-            <img src="critique-image2.jpg" alt="Critique Image 2" />
-          </div>
-        </div>
-      </section>
+     {/* Critique Section */}
+<section className="critique-section">
+  <h2>Critique</h2>
+  <hr />
+  <div className="critique-content">
+    {/* First Row: Differences on Left, Image on Right */}
+    <div className="critique-row">
+      <div className="critique-text">
+        <h3>Differences</h3>
+        <ul>
+          <li>
+          ​-The painting of Siddons is almost a full body painting utilizing the objects around her on canvas, but mine is a close up focusing on the face, isolated from all other objects (excluding the hands).</li>
+          <li>
+          -My art contains sculpture in addition to painting to represent myself, and contrasting Gainsborough's art is solely a painting to illustrate Siddons and her personality. </li>
+          
+          <li>-Gainsborough work has a variety of hues in the background and on Siddons, while my own has a minimal color palette.</li>
+        </ul>
+      </div>
+      <div className="critique-image">
+        <img src="https://plus.unsplash.com/premium_photo-1673014201324-2eccc35d8387?q=80&w=1789&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Critique Image 1" />
+      </div>
+    </div>
+
+    {/* Second Row: Image on Left, Similarities on Right */}
+    <div className="critique-row reverse">
+      <div className="critique-image">
+        <img src="https://plus.unsplash.com/premium_photo-1675615648106-7d7173bcda9f?q=80&w=2044&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Critique Image 2" />
+      </div>
+      <div className="critique-text">
+        <h3>Similarities</h3>
+        <ul>
+ 
+    <li>       
+-Gainsborough's and my own painting are done in realism, focusing on correctly portraying a person.</li>
+          <li>-Both works are re-done paintings of someone. In my own piece I am repainting an old self-portrait and making it more true to life, and similarly Gainsborough is repainting a portrait of Sarah Siddons in her true light.</li>
+          <li>-In the two art works focus is put on the subject and who that person is: Siddons, a confidant person and me.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
       
       {/* Navigation Buttons */}
       <div className="navigation-buttons">

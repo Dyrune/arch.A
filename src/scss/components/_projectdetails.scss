@@ -1,5 +1,5 @@
 .modal-content {
-    padding: 0 130px;
+    padding: 0 150px;
   }
   
   /* Prescription Section */
@@ -106,7 +106,7 @@
     font-size: 1.2rem;
     font-style: italic;
     @media (max-width:756px) {
-      font-size: 2.2rem;
+      font-size: 1rem;
       padding: 86px 0 0 0;
       font-style: normal;
     }
@@ -201,7 +201,7 @@
     @media (max-width:756px) {
       padding: 0;
       width: 60%;
-      font-size: 2rem;
+      font-size: 1rem;
     }
   }
 
@@ -323,6 +323,7 @@
     color: var(--text-color);
     border: none;
     font-size: 2rem;
+    display: none;
 }
 
 .next-project-section {
@@ -399,16 +400,16 @@
       }
   
       .cl h3 {
-        font-size: 1.8rem;
+        font-size: 1rem;
         font-weight: 200;
       }
   
       .cl p, .cl ul {
-        font-size: 1.8rem;
+        font-size: 1rem;
       }
   
       .project-description p {
-        font-size: 2rem;
+        font-size: 1rem;
         padding-right: 0;
         font-weight: normal;
       }

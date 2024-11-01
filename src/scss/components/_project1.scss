@@ -5,6 +5,13 @@
     flex-direction: column;
     align-items: center;
   
+    @media (max-width:1200px) {
+        padding: 150px;
+    }
+    @media (max-width:768px) {
+        padding: 30px;
+        }
+
     h1 {
       text-align: center;
       margin: 0;
@@ -29,7 +36,11 @@
       gap: 20px;
       
       .project-image {
-        width: 50%;
+        width: 50%;  
+        
+        @media (max-width:768px) {
+            width: 100%;
+            }
       }
       
       .project-description {
@@ -37,13 +48,18 @@
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        text-align: left;
+        text-align: left;  
+        
+        @media (max-width:768px) {
+            width: 100%;
+            }
       }
-    }
-  }
-  
+    }}
 #ir img {
     width: 23%;
+    @media (max-width:1025px) {
+        width: 100%;
+    }
 }
 
   .inspiration-section {
@@ -60,10 +76,14 @@
       justify-content: space-around;
       gap: 40px;
       margin: 20px 0;
+      
+    @media (max-width:1025px) {
+        flex-direction: column;
+    }
   
       img {
         width: 45%; // Adjusted for space between images
-        margin: 0 10px;
+        margin: 0 10px; 
       }
       
       .inspiration-images {
@@ -91,10 +111,16 @@
       align-items: center;
       justify-content: space-between;
       margin: 20px 0;
+      @media (max-width:1025px) {
+        flex-direction: column;
+      }
   
       .planning-description {
         width: 45%;
         text-align: left;
+        @media (max-width:1025px) {
+        width: 100%;
+        }
       }
   
       .planning-images-group {
@@ -102,6 +128,9 @@
         flex-wrap: wrap;
         gap: 10px;
         width: 45%; // Matches the width of .planning-description
+        @media (max-width:1025px) {
+        width: 100%;
+        }
   
         img {
           width: calc(100% / 3 - 10px); // Divides space into smaller images with a small gap
@@ -137,10 +166,18 @@ ul li {
     .reflection-description {
       width: 65%;
       text-align: left;
+      
+      @media (max-width:1025px) {
+        width: 100%;
+        }
     }
   
     .reflection-image {
       width: 30%;
+      
+      @media (max-width:1025px) {
+        width: 100%;
+        }
     }
   }
   
@@ -186,14 +223,17 @@ ul li {
     .nav-button {
       padding: 10px 20px;
       border: none;
-      background-color: #007BFF;
-      color: #fff;
+      background-color: var(--bg-color);
+      border: 1px solid var(--text-color);
+      color: var(--text-color);
       font-size: 16px;
       cursor: pointer;
       transition: background-color 0.3s;
   
       &:hover {
-        background-color: #0056b3;
+        background-color: var(--text-color);
+        border: 1px solid black;
+        color: var(--bg-color);
       }
     }
   
@@ -214,6 +254,25 @@ ul li {
   align-items: center;
 }
 
+.project-section .project-content {
+    
+    @media (max-width:768px) {
+        flex-direction: column;
+        }
+}
+
+.reflection-section .reflection-content {
+    
+    @media (max-width:1025px) {
+        flex-direction: column;
+        }
+}
+
+.reflection-section {
+    
+  margin-top: 40px;
+}
+
 .project-page .project-section {
     padding: 0 0px;
 }
@@ -228,6 +287,11 @@ ul li {
 
 .hgr {
     gap: 20px;
+    justify-content: center;
+    display: flex;
+    @media (max-width:1025px) {
+        justify-content: space-between;
+    }
 }
 
 #hgr {
@@ -238,5 +302,98 @@ ul li {
 
 #hgr .planning-description {
     text-align: right;
-    width: 75%;
+    width: 60%; 
+    
+    @media (max-width:768px) {
+        width: 100%;
+        }
+}
+
+  
+  .critique-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Styling for each row */
+  .critique-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .critique-text {
+    flex: 1;
+  }
+  
+  .critique-text h3 {
+    margin-bottom: 10px;
+  }
+  
+  .critique-text ul {
+    list-style: none;
+    padding-left: 0;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  
+  .critique-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .critique-image img {
+    max-width: 100%;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .critique-row {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .critique-row.reverse {
+      flex-direction: column;
+    }
+  }
+
+  .critique-row .critique-image {
+    justify-content: flex-end;
+  }
+
+  .critique-row.reverse .critique-image {
+    justify-content: flex-start;
+  }
+  .critique-row.reverse .critique-image img{
+    max-width: 70%;
+    
+    @media (max-width:1200px) {
+        max-width: 100%;
+    }
+  }
+  .critique-row .critique-image img{
+    max-width: 70%;
+    
+    @media (max-width:1200px) {
+        max-width: 100%;
+    }
+  }
+
+  .critique-row.reverse .critique-text {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.critique-row .critique-text {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }

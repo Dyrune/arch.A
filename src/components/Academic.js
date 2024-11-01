@@ -148,7 +148,7 @@ function Academic() {
       <div key={project.id} className="project-item">
         <Link to={project.link}>
         <div style={{maxWidth: '350px'}}>
-          <img src={project.imgSrc} alt={project.title} className="project-image" /></div>
+          <img src={project.imgSrc} alt={project.title} className="projectt-image" /></div>
           <div className="overlayy">
           
             <h3>{project.title}</h3>
@@ -173,7 +173,7 @@ function Academic() {
     {researchItems.map((research) => (
       <div key={research.id} className="research-item">
         <Link to={research.link}>
-          <img src={research.imgSrc} alt={research.title} className="research-image" />
+          <img src={research.imgSrc} alt={research.title} className="researchh-image" />
           <div className="overlayy">
             <h3>{research.title}</h3>
             <p>{research.description}</p>

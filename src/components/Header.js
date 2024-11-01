@@ -130,6 +130,7 @@ function Header({ darkMode }) {
       
       ) : (
         <>
+        <div className='barbut'>
           <button
             disabled={disabled}
             className={`hamburger-button ${menuState.clicked ? 'open' : ''}`}
@@ -139,9 +140,9 @@ function Header({ darkMode }) {
             }}
           >
             <span className="bar"></span>
+            <span className="bar"style={{ marginLeft: '10px',}}  ></span>
             <span className="bar"></span>
-            <span className="bar"></span>
-          </button>
+          </button></div>
           <div className={`hamburger-menu ${menuState.clicked ? 'open' : ''}`}>
             <Hamburger state={menuState} toggleMenu={toggleMenu} />
           </div>

@@ -59,7 +59,7 @@ function App() {
               }
             >
               <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
+              <Route path="/about" element={<About darkMode={darkMode} />} />
               <Route path="/biography" element={<Biography />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/project1" element={<Project1 />} />

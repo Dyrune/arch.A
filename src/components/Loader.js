@@ -20,7 +20,7 @@ const Loader = ({ setLoading }) => {
     <div className="preloader">
       <div className="texts-container"> <span>fOrm</span> <span>
 
-      <img src="/logo_dark.PNG" className="formstudio" alt="Planning Image 1" />
+      <img src="/logo_dark.png" className="formstudio" alt="form studio logo" />
 
       </span> <span>studiO</span>
       </div>

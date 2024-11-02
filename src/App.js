@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './components/Home';
+import About from './components/About';
 import Biography from './components/biography';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
@@ -58,6 +59,7 @@ function App() {
               }
             >
               <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
               <Route path="/biography" element={<Biography />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/project1" element={<Project1 />} />

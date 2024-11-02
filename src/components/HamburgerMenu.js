@@ -95,7 +95,7 @@ const Hamburger = ({ state, swiperRef }) => {
                       ref={line1}
                       onClick={(e) => handleLinkClick(e, "/about")}
                     >
-                      Sbout
+                      About
                     </a>
                   </li>
                   <li>

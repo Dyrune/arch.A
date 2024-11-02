@@ -36,9 +36,24 @@ function App() {
     const fakeLoadingDuration = 7000; // 5000 ms minimum duration
     const timeout = setTimeout(() => setLoading(false), fakeLoadingDuration);
 
+
     // Clear timeout if component unmounts
     return () => clearTimeout(timeout);
   }, []);
+
+  useEffect(() => {
+    if (!loading) {  // Only reset zoom when loader is hidden
+        function resetZoom() {
+            document.body.style.transform = "scale(1)";
+            document.body.style.transformOrigin = "0 0";
+        }
+        resetZoom();
+
+        return () => {
+            document.body.style.transform = "";
+        };
+    }
+}, [loading]);
 
   return (
     <>

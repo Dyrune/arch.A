@@ -23,6 +23,10 @@
   .formstudio {
     height: auto;
     width: 10rem;
+
+    @media (max-width:480px) {
+      width: 7rem;
+    }
   }
 
   .nav-links {

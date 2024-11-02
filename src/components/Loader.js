@@ -18,10 +18,11 @@ const Loader = ({ setLoading }) => {
 
   return (
     <div className="preloader">
-      <div className="texts-container">
-        <span>Architecutre,</span>
-        <span>Planning,</span>
-        <span>Solutions.</span>
+      <div className="texts-container"> <span>fOrm</span> <span>
+
+      <img src="/logo_dark.PNG" className="formstudio" alt="Planning Image 1" />
+
+      </span> <span>studiO</span>
       </div>
     </div>
   );

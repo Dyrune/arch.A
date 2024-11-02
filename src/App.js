@@ -41,19 +41,6 @@ function App() {
     return () => clearTimeout(timeout);
   }, []);
 
-  useEffect(() => {
-    if (!loading) {  // Only reset zoom when loader is hidden
-        function resetZoom() {
-            document.body.style.transform = "scale(1)";
-            document.body.style.transformOrigin = "0 0";
-        }
-        resetZoom();
-
-        return () => {
-            document.body.style.transform = "";
-        };
-    }
-}, [loading]);
 
   return (
     <>

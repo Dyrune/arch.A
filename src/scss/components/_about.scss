@@ -66,10 +66,10 @@
   
   /* Vertical Sidebar */
   .vertical-sidebar {
-    position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+    position: fixed !important;
+    top: 50% !important;
+    left: 0 !important;
+    transform: translateY(-50%) !important;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -92,7 +92,7 @@
   /* Responsive Design */
   @media (max-width: 768px) {
     .about-info-container {
-      padding: 5rem 0;
+      padding: 3rem 0;
     }
   
     .school-info-section {
@@ -115,7 +115,6 @@
   
   .school-column p, 
   .additional-column p {
-    width: 100%;
     margin: 0;
     padding-right: 40px;
     @media (max-width:756px) {
@@ -126,8 +125,12 @@
   .school-column, 
   .additional-column {
     
-    max-width: 400px;
+    max-width: 550px;
     padding: 10px; 
+    font-size: 1.2rem;
+    @media (max-width:768px) {
+        font-size: 1rem;
+    }
 }
   
   /* School Info Section and Experience Goals Section in Rows */
@@ -270,7 +273,7 @@
   
   .about-section {
     @media (max-width: 756px) {
-      padding: 50px 50px 0;
+      padding: 0px 50px 0;
     }
   }
   

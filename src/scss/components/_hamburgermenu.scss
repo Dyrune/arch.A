@@ -121,6 +121,9 @@
               @media (max-width:756px){
                 font-size: 1rem;
                 height: 50px;
+                @media (max-width:420px) {
+                    height: 40px;
+                }
               }
 
               a {

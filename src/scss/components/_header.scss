@@ -20,6 +20,8 @@
     }
   }
 
+
+
   .formstudio {
     height: auto;
     width: 10rem;
@@ -52,8 +54,13 @@
     display: none; /* Hide on smaller screens */
     opacity: 0;
   }
-}
 
+  
+}
+.barbut {
+    display: none;
+  }
+  
 .barbut {
   position: fixed;
   right: 0;

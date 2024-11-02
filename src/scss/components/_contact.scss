@@ -91,6 +91,11 @@
   @media (max-width:1025px) {
     font-size: 0.8rem;
   }
+
+  @media (max-width:1025px) {
+    font-size: 0.8rem;
+    justify-content: center;
+  }
 }
 
 .contact-info li span p {
@@ -133,4 +138,13 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+  }
+
+  .contact-text p a {
+    color: var(--text-color);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }

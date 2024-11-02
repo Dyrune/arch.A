@@ -9,6 +9,7 @@ import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faXTwitter, faUpwork, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { Autoplay } from 'swiper/modules';
 import { initializeScrollAnimation } from './ScrollAnimation';
+import EmailLink from './EmailLink';
 
 function Contact() {
   useEffect(() => {
@@ -75,15 +76,18 @@ function Contact() {
     <li>
     <FontAwesomeIcon icon={faEnvelope} className="icon" />
       <span className="contact-text">
-        <p>email1@example.com</p>
-        <p>email1@example.com</p>
+        <p> <EmailLink email="david.formarchitect@gmail.com"/></p>
+        <p> <EmailLink email="david.akinloye@outlook.com"/></p>
+        
       </span>
     </li>
     <li>
       <FontAwesomeIcon icon={faPhone} className="icon" />
       <span className="contact-text">
-        <p>+1 (987) 654-3210</p>
-        <p>+1 (123) 456-7890</p>
+        <p>
+        <a href="tel:+12313987268">+1 (231) 398-7268</a></p>
+        <p>
+        <a href="tel:+2348142288064">+234-814-228-8064</a></p>
       </span>
     </li>
   </ul>

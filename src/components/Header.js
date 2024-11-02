@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 import Hamburger from './HamburgerMenu';
 import logoLight from '../images/logo_light.PNG';
 import logoDark from '../images/logo_dark.png';
@@ -72,77 +72,83 @@ function Header({ darkMode }) {
   return (
     <header className="header">
       <div className="logo">
-      <img src={logo} className='formstudio' alt="Planning Image 1" />
-            
+        {/* Wrap the logo in a Link to navigate to the main page */}
+        <Link to="/" onClick={handleNavLinkClick}>
+          <img 
+            src={logo} 
+            className="formstudio" 
+            alt="Main Logo" 
+          />
+        </Link>
       </div>
+
       {!isMobile ? (
         <nav className="nav-links">
-        <NavLink 
-          to="/about" 
-          className="animation-element" 
-          style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
-          onClick={handleNavLinkClick}
-        >
-          About 
-        </NavLink>
-        <NavLink 
-          to="/biography" 
-          className="animation-element" 
-          style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
-          onClick={handleNavLinkClick}
-        >
-          biography
-        </NavLink>
-        <NavLink 
-  to="/academics" 
-  className="animation-element" 
-  style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
-  onClick={handleNavLinkClick}
->
-  Academics
-</NavLink>
-
-        <NavLink 
-          to="/projects" 
-          className="animation-element" 
-          style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
-          onClick={handleNavLinkClick}
-        >
-          Projects
-        </NavLink>
-        <NavLink 
-          to="/" 
-          className="animation-element" 
-          style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
-          onClick={handleNavLinkClick}
-        >
-          Photography
-        </NavLink>
-        <NavLink 
-          to="/contact" 
-          className="animation-element" 
-          style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal'})} 
-          onClick={handleNavLinkClick}
-        >
-          Contact
-        </NavLink>
-      </nav>
-      
+          <NavLink 
+            to="/about" 
+            className="animation-element" 
+            style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
+            onClick={handleNavLinkClick}
+          >
+            About 
+          </NavLink>
+          <NavLink 
+            to="/biography" 
+            className="animation-element" 
+            style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
+            onClick={handleNavLinkClick}
+          >
+            Biography
+          </NavLink>
+          <NavLink 
+            to="/academics" 
+            className="animation-element" 
+            style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
+            onClick={handleNavLinkClick}
+          >
+            Academics
+          </NavLink>
+          <NavLink 
+            to="/projects" 
+            className="animation-element" 
+            style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
+            onClick={handleNavLinkClick}
+          >
+            Projects
+          </NavLink>
+          <NavLink 
+            to="/" 
+            className="animation-element" 
+            style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal' })} 
+            onClick={handleNavLinkClick}
+          >
+            Photography
+          </NavLink>
+          <NavLink 
+            to="/contact" 
+            className="animation-element" 
+            style={({ isActive }) => ({ fontWeight: isActive ? 'bold' : 'normal'})} 
+            onClick={handleNavLinkClick}
+          >
+            Contact
+          </NavLink>
+        </nav>
       ) : (
         <>
-        <div className='barbut'>
-          <button
-            disabled={disabled}
-            className={`hamburger-button ${menuState.clicked ? 'open' : ''}`}
-            onClick={(e) => {
-              e.stopPropagation();
-              toggleMenu();
-            }}
-          >
-            <span className="bar"></span>
-            <span className="bar"style={{ marginLeft: '10px',}}  ></span>
-            <span className="bar"></span>
-          </button></div>
+          <div className="barbut">
+            <button
+              disabled={disabled}
+              className={`hamburger-button ${menuState.clicked ? 'open' : ''}`}
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleMenu();
+              }}
+            >
+              <span className="bar"></span>
+              <span className="bar" style={{ marginLeft: '10px' }}></span>
+              <span className="bar"></span>
+            </button>
+          </div>
           <div className={`hamburger-menu ${menuState.clicked ? 'open' : ''}`}>
             <Hamburger state={menuState} toggleMenu={toggleMenu} />
           </div>

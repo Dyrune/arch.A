@@ -76,12 +76,6 @@ const Hamburger = ({ state, swiperRef }) => {
     });
   };
 
-  const goToContactSlide = (e) => {
-    e.preventDefault();
-    if (swiperRef.current?.swiper) {
-      swiperRef.current.swiper.slideTo(3);
-    }
-  };
 
   return (
     <div ref={menuLayer} className="hamburger-menu">
@@ -142,7 +136,7 @@ const Hamburger = ({ state, swiperRef }) => {
                       onMouseEnter={handleHover}
                       onMouseOut={handleHoverExit}
                       ref={line4}
-                      onClick={goToContactSlide}
+                      onClick={(e) => handleLinkClick(e, "/contact")}
                     >
                       Contact
                     </a>

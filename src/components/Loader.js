@@ -7,7 +7,7 @@ const Loader = ({ setLoading }) => {
     preLoaderAnim();
 
     // Simulate a loading time, or you can replace this with actual loading logic (e.g., fetching data)
-    const fakeLoadingDuration = 5000; // Time in ms, adjust this based on your content loading time
+    const fakeLoadingDuration = 7000; // Time in ms, adjust this based on your content loading time
     const timeout = setTimeout(() => {
       setLoading(false); // Once loading is done, set loading to false
     }, fakeLoadingDuration);

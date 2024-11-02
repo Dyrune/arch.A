@@ -32,7 +32,7 @@ function App() {
 
   useEffect(() => {
     // Set a minimum duration for the loader
-    const fakeLoadingDuration = 6000; // 5000 ms minimum duration
+    const fakeLoadingDuration = 7000; // 5000 ms minimum duration
     const timeout = setTimeout(() => setLoading(false), fakeLoadingDuration);
 
     // Clear timeout if component unmounts

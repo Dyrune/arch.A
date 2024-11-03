@@ -241,8 +241,8 @@ function Project1() { const navigate = useNavigate();
       
       {/* Navigation Buttons */}
       <div className="navigation-buttons">
-        <button className="nav-button left-button">Go to Project 4</button>
-        <button className="nav-button right-button" onClick={handleNavigate}>Go to Project 2</button>
+        <button className="nav-button left-button fade-section">Go to Project 4</button>
+        <button className="nav-button right-button fade-section" onClick={handleNavigate}>Go to Project 2</button>
       </div>
       </section>
         {/* Lightbox Overlay */}

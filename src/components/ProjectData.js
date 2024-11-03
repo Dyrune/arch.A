@@ -4,7 +4,7 @@ const projects = [
     {
         id: 1,
         title: "Milliton Jnr. House",
-        category: "Architecture", // Added category
+        category: "3D Designs", // Added category
         imgSrc: "https://plus.unsplash.com/premium_photo-1686090450346-f418fff5486e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Thumbnail or cover image
         description: "A short description of the first project and I must tell you, it is one of a kind. You can't see me anywhere else, because I am automatic.",
         detailedDescription: `
@@ -12,7 +12,7 @@ const projects = [
           The key technologies used include React, Node.js, and Express. We integrated several
           third-party APIs for dynamic content generation and implemented a custom backend
           for data handling and user authentication. The project involved:
-          - Designing an intuitive Exterior.
+          - Designing an intuitive 2D Design Blueprint.
           - Backend setup for handling requests.
           - Integrating payment systems.
           - Deploying the final application on AWS.
@@ -59,9 +59,9 @@ const projects = [
     },  {
         id: 2,
         title: "Byrouted",
-        category: "Exterior",
+        category: "3D Designs",
         imgSrc: "https://images.pexels.com/photos/2064826/pexels-photo-2064826.jpeg?auto=compress&cs=tinysrgb&w=600",
-        description: "This project focused on a sleek Exterior design for an e-commerce platform, aiming to improve user experience and increase conversion rates.",
+        description: "This project focused on a sleek 2D Design Blueprint design for an e-commerce platform, aiming to improve user experience and increase conversion rates.",
         detailedDescription: `
           For Byrouted, we designed an intuitive, user-centric interface, improving the usability and aesthetic appeal
           of the e-commerce platform. The project involved:
@@ -102,9 +102,9 @@ const projects = [
       {
         id: 3,
         title: "Gregort John",
-        category: "Interior",
+        category: "3D Designs",
         imgSrc: "https://images.pexels.com/photos/12983795/pexels-photo-12983795.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        description: "A Interior project focused on creating a brand identity for Gregort John, a luxury fashion brand.",
+        description: "A 3D Designs project focused on creating a brand identity for Gregort John, a luxury fashion brand.",
         detailedDescription: `
           We were tasked with developing a cohesive and sophisticated brand identity for Gregort John. This included:
           - Designing a new logo and visual identity system.
@@ -144,12 +144,12 @@ const projects = [
       {
         id: 4,
         title: "Ricked Gross",
-        category: "Architecture",
+        category: "2D Design Blueprint",
         imgSrc: "https://images.pexels.com/photos/12445924/pexels-photo-12445924.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        description: "An extensive Architecture project for Ricked Gross, involving a complete overhaul of their digital presence.",
+        description: "An extensive 2D Design Blueprint project for Ricked Gross, involving a complete overhaul of their digital presence.",
         detailedDescription: `
           The Ricked Gross project included revamping their entire web presence, focusing on:
-          - Modern Architecture principles.
+          - Modern 2D Design Blueprint principles.
           - Optimized performance and load speeds.
           - Ensuring accessibility compliance across all pages.
         `,
@@ -160,7 +160,7 @@ const projects = [
           },
         ],
         features: [
-          "Responsive Architecture",
+          "Responsive 2D Design Blueprint",
           "SEO optimization",
           "Performance enhancements",
           "Accessibility compliance",
@@ -180,11 +180,11 @@ const projects = [
       {
         id: 5,
         title: "Slite Rapper",
-        category: "Masterplanning",
+        category: "Animation (3D Workflow)",
         imgSrc: "https://images.pexels.com/photos/879355/pexels-photo-879355.jpeg?auto=compress&cs=tinysrgb&w=600",
-        description: "A complete Masterplanning project for Slite Rapper, focusing on creating a unique visual identity for their latest product launch.",
+        description: "A complete Animation (3D Workflow) project for Slite Rapper, focusing on creating a unique visual identity for their latest product launch.",
         detailedDescription: `
-          This Masterplanning project involved the creation of a new logo, packaging, and digital marketing materials for Slite Rapper's latest product. Key tasks included:
+          This Animation (3D Workflow) project involved the creation of a new logo, packaging, and digital marketing materials for Slite Rapper's latest product. Key tasks included:
           - Conceptualizing the logo and overall brand identity.
           - Designing product packaging and marketing collateral.
         `,
@@ -336,9 +336,9 @@ const projects = [
       {
         id: 9,
         title: "Hype Lounge",
-        category: "Masterplanning & Identity",
+        category: "Animation (3D Workflow) & Identity",
         imgSrc: "https://images.pexels.com/photos/4065156/pexels-photo-4065156.jpeg?auto=compress&cs=tinysrgb&w=600",
-        description: "A complete Masterplanning and identity project for Hype Lounge, a new luxury nightlife brand.",
+        description: "A complete Animation (3D Workflow) and identity project for Hype Lounge, a new luxury nightlife brand.",
         detailedDescription: `
           Hype Lounge required a sophisticated, modern brand identity that reflected their luxurious image. Our work included:
           - Designing a sleek logo and visual identity system.
@@ -415,9 +415,9 @@ const projects = [
       },{
         id: 11,
         title: "Urban Explore",
-        category: "Architecture",
+        category: "2D Design Blueprint",
         imgSrc: "https://images.pexels.com/photos/374074/pexels-photo-374074.jpeg?auto=compress&cs=tinysrgb&w=600",
-        description: "A cutting-edge Architecture project for Urban Explore, focusing on showcasing urban tourism experiences.",
+        description: "A cutting-edge 2D Design Blueprint project for Urban Explore, focusing on showcasing urban tourism experiences.",
         detailedDescription: `
           Urban Explore wanted a modern, visually appealing website to highlight urban tourism experiences in major cities around the world. The website needed to be fully responsive, visually immersive, and easy to navigate. Key features of the project include:
           - Stunning full-width images and interactive galleries.
@@ -456,9 +456,9 @@ const projects = [
       {
         id: 12,
         title: "Wellness Tracker",
-        category: "Exterior",
+        category: "2D Design Blueprint",
         imgSrc: "https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=600",
-        description: "Exterior design for a mobile app that helps users track and manage their health and wellness.",
+        description: "2D Design Blueprint design for a mobile app that helps users track and manage their health and wellness.",
         detailedDescription: `
           Wellness Tracker is a mobile app designed to help users monitor their health metrics, including exercise, sleep, and nutrition. The project required creating a user-friendly, visually appealing interface. Key elements of the design include:
           - Intuitive dashboard displaying health metrics at a glance.
@@ -497,11 +497,11 @@ const projects = [
       {
         id: 13,
         title: "Artify Gallery",
-        category: "Interior",
+        category: "3D Designs",
         imgSrc: "https://images.pexels.com/photos/93400/pexels-photo-93400.jpeg?auto=compress&cs=tinysrgb&w=600",
-        description: "Interior for Artify Gallery, a contemporary art gallery looking to enhance its visual identity.",
+        description: "3D Designs for Artify Gallery, a contemporary art gallery looking to enhance its visual identity.",
         detailedDescription: `
-          Artify Gallery needed a fresh, modern visual identity to reflect its contemporary art collections. Our Interior work included:
+          Artify Gallery needed a fresh, modern visual identity to reflect its contemporary art collections. Our 3D Designs work included:
           - A sleek, minimalist logo design.
           - Marketing collateral including posters, banners, and social media graphics.
           - Custom fonts and color schemes to match the gallery’s aesthetic.
@@ -538,7 +538,7 @@ const projects = [
       {
         id: 14,
         title: "EcoLiving",
-        category: "Architecture",
+        category: "2D Design Blueprint",
         imgSrc: "https://images.pexels.com/photos/1643389/pexels-photo-1643389.jpeg?auto=compress&cs=tinysrgb&w=600",
         description: "A website design project for EcoLiving, a platform promoting sustainable living and eco-friendly products.",
         detailedDescription: `
@@ -579,9 +579,9 @@ const projects = [
       {
         id: 15,
         title: "BrandSphere",
-        category: "Masterplanning",
+        category: "Animation (3D Workflow)",
         imgSrc: "https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg?auto=compress&cs=tinysrgb&w=600",
-        description: "Comprehensive Masterplanning and identity design for BrandSphere, a marketing consultancy firm.",
+        description: "Comprehensive Animation (3D Workflow) and identity design for BrandSphere, a marketing consultancy firm.",
         detailedDescription: `
           BrandSphere needed a complete brand overhaul to reflect its innovative approach to marketing consultancy. Our work included:
           - Logo redesign to better align with the company’s forward-thinking values.
@@ -596,7 +596,7 @@ const projects = [
           },
           {
             src: "https://images.pexels.com/photos/247432/pexels-photo-247432.jpeg?auto=compress&cs=tinysrgb&w=600",
-            description: "Stationery and business card design as part of the new Masterplanning."
+            description: "Stationery and business card design as part of the new Animation (3D Workflow)."
           }
         ],
         features: [
@@ -619,9 +619,9 @@ const projects = [
       {
         id: 16,
         title: "Vibrant Visions",
-        category: "Interior",
+        category: "3D Designs",
         imgSrc: "https://images.unsplash.com/photo-1729829471656-8488135a99ec?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        description: "Interior project creating a visual identity for an art exhibition.",
+        description: "3D Designs project creating a visual identity for an art exhibition.",
         detailedDescription: `
           Vibrant Visions was an art exhibition that needed eye-catching promotional materials and a cohesive visual identity to draw in a diverse audience. Our design work focused on:
           - Creating promotional posters with bold, vivid colors.
@@ -660,7 +660,7 @@ const projects = [
       {
         id: 17,
         title: "UX Simplified",
-        category: "Exterior",
+        category: "2D Design Blueprint",
         imgSrc: "https://images.pexels.com/photos/3183199/pexels-photo-3183199.jpeg?auto=compress&cs=tinysrgb&w=600",
         description: "User experience design for a web application focused on simplifying project management.",
         detailedDescription: `
@@ -691,7 +691,7 @@ const projects = [
         location: "Austin, TX",
         projectStage: "In Progress",
         deliverables: [
-          "Exterior design",
+          "2D Design Blueprint design",
           "Task management system",
           "Dashboard with insights",
           "Mobile-responsive design",
@@ -701,9 +701,9 @@ const projects = [
       {
         id: 18,
         title: "Green Market",
-        category: "Masterplanning",
+        category: "Animation (3D Workflow)",
         imgSrc: "https://images.pexels.com/photos/1457844/pexels-photo-1457844.jpeg?auto=compress&cs=tinysrgb&w=600",
-        description: "Masterplanning project for Green Market, a farmer's market promoting organic and sustainable products.",
+        description: "Animation (3D Workflow) project for Green Market, a farmer's market promoting organic and sustainable products.",
         detailedDescription: `
           Green Market needed a fresh, earthy brand identity to promote their farmer's market. We focused on creating:
           - A new logo that embodies organic and eco-friendly values.
@@ -742,8 +742,8 @@ const projects = [
       {
         id: 19,
         title: "BlueSky Developers",
-        category: "Architecture",
-        imgSrc: "https://images.pexels.com/photos/53176/architecture-iron-steel-building-53176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        category: "2D Design Blueprint",
+        imgSrc: "https://images.pexels.com/photos/53176/2D Design Blueprint-iron-steel-building-53176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         description: "Website design for BlueSky Developers, a real estate development company.",
         detailedDescription: `
           BlueSky Developers needed a sleek, professional website to showcase their real estate development projects. Key elements of the design include:
@@ -783,9 +783,9 @@ const projects = [
       {
         id: 20,
         title: "NextGen Fitness",
-        category: "Exterior",
+        category: "2D Design Blueprint",
         imgSrc: "https://images.pexels.com/photos/3076515/pexels-photo-3076515.jpeg?auto=compress&cs=tinysrgb&w=600",
-        description: "Exterior design for a fitness app focused on personalized workout plans.",
+        description: "2D Design Blueprint design for a fitness app focused on personalized workout plans.",
         detailedDescription: `
           NextGen Fitness is a mobile app designed to provide users with personalized workout plans based on their fitness goals and preferences. Key design elements include:
           - A user-friendly onboarding process to assess fitness levels.
@@ -823,9 +823,9 @@ const projects = [
       {
         id: 22,
         title: "Frog Jump",
-        category: "Exterior",
+        category: "2D Design Blueprint",
         imgSrc: "https://images.pexels.com/photos/2064826/pexels-photo-2064826.jpeg?auto=compress&cs=tinysrgb&w=600",
-        description: "Exterior design for a gamified learning app.",
+        description: "2D Design Blueprint design for a gamified learning app.",
         detailedDescription: `
           Frog Jump is a mobile app designed to make learning fun through interactive games. The focus was on:
           - Gamified learning modules for kids aged 6-12.
@@ -853,11 +853,11 @@ const projects = [
       {
         id: 23,
         title: "Them Chronic",
-        category: "Interior",
+        category: "3D Designs",
         imgSrc: "https://images.pexels.com/photos/12983795/pexels-photo-12983795.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        description: "Interior for a music album cover.",
+        description: "3D Designs for a music album cover.",
         detailedDescription: `
-          Them Chronic is a Interior project for a music album cover that blends visual storytelling with modern design aesthetics. The project highlights:
+          Them Chronic is a 3D Designs project for a music album cover that blends visual storytelling with modern design aesthetics. The project highlights:
           - Bold use of colors and abstract shapes.
           - Thematic representation of the album’s core message.
           - High-quality print design suitable for both digital and physical distribution.
@@ -882,7 +882,7 @@ const projects = [
       {
         id: 24,
         title: "Housed Frontier",
-        category: "Architecture",
+        category: "2D Design Blueprint",
         imgSrc: "https://images.pexels.com/photos/12445924/pexels-photo-12445924.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
         description: "Real estate website showcasing available properties.",
         detailedDescription: `
@@ -911,13 +911,13 @@ const projects = [
       {
         id: 25,
         title: "Hoped Home",
-        category: "Masterplanning",
+        category: "Animation (3D Workflow)",
         imgSrc: "https://images.pexels.com/photos/879355/pexels-photo-879355.jpeg?auto=compress&cs=tinysrgb&w=600",
-        description: "Masterplanning and identity design for a home decor company.",
+        description: "Animation (3D Workflow) and identity design for a home decor company.",
         detailedDescription: `
-          Hoped Home is a Masterplanning project for a home decor company, focusing on creating a modern and cohesive brand identity. The project involved:
+          Hoped Home is a Animation (3D Workflow) project for a home decor company, focusing on creating a modern and cohesive brand identity. The project involved:
           - Designing a memorable logo and visual identity.
-          - Creating Masterplanning materials for both print and digital platforms.
+          - Creating Animation (3D Workflow) materials for both print and digital platforms.
           - Establishing a consistent color palette and typography.
         `,
         images: [
@@ -935,16 +935,16 @@ const projects = [
         client: "Hoped Home Inc.",
         location: "Austin, TX",
         projectStage: "Completed",
-        deliverables: ["Masterplanning guidelines", "Marketing collateral"],
+        deliverables: ["Animation (3D Workflow) guidelines", "Marketing collateral"],
       },
     {
     id: 26,
     title: "Deadly Right",
-    category: "Interior",
+    category: "3D Designs",
     imgSrc: "https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg?auto=compress&cs=tinysrgb&w=600",
-    description: "Interior for an action movie poster.",
+    description: "3D Designs for an action movie poster.",
     detailedDescription: `
-      Deadly Right is a Interior project for a high-impact action movie poster. The design conveys intensity and drama, incorporating:
+      Deadly Right is a 3D Designs project for a high-impact action movie poster. The design conveys intensity and drama, incorporating:
       - Bold typography with action-oriented elements.
       - Dark, moody colors to create a sense of suspense.
       - A visually striking layout that highlights the main characters.
@@ -969,11 +969,11 @@ const projects = [
   {
     id: 27,
     title: "Monstar We Made",
-    category: "Exterior",
+    category: "2D Design Blueprint",
     imgSrc: "https://images.pexels.com/photos/1634272/pexels-photo-1634272.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    description: "Exterior design for a horror-themed mobile game.",
+    description: "2D Design Blueprint design for a horror-themed mobile game.",
     detailedDescription: `
-      Monstar We Made is a horror-themed mobile game where players create and battle monsters. The Exterior design focuses on:
+      Monstar We Made is a horror-themed mobile game where players create and battle monsters. The 2D Design Blueprint design focuses on:
       - A dark, immersive interface that reflects the eerie theme of the game.
       - Smooth navigation between game levels and monster customization.
       - Animated interactions and sound effects that enhance the user experience.
@@ -998,19 +998,19 @@ const projects = [
   {
     id: 28,
     title: "Killer House",
-    category: "Masterplanning",
+    category: "Animation (3D Workflow)",
     imgSrc: "https://images.pexels.com/photos/28900598/pexels-photo-28900598/free-photo-of-scenic-french-lighthouse-by-the-seaside.jpeg?auto=compress&cs=tinysrgb&w=600",
-    description: "Masterplanning design for a real estate development company.",
+    description: "Animation (3D Workflow) design for a real estate development company.",
     detailedDescription: `
-      Killer House is a Masterplanning project for a luxury real estate development company. The Masterplanning needed to convey exclusivity and sophistication through:
-      - A sleek logo design that reflects the company's modern architecture focus.
-      - Cohesive Masterplanning materials including business cards, brochures, and signage.
+      Killer House is a Animation (3D Workflow) project for a luxury real estate development company. The Animation (3D Workflow) needed to convey exclusivity and sophistication through:
+      - A sleek logo design that reflects the company's modern 2D Design Blueprint focus.
+      - Cohesive Animation (3D Workflow) materials including business cards, brochures, and signage.
       - A distinct color palette that reinforces the luxury aspect of the brand.
     `,
     images: [
       {
         src: "https://images.pexels.com/photos/28900598/pexels-photo-28900598/free-photo-of-scenic-french-lighthouse-by-the-seaside.jpeg?auto=compress&cs=tinysrgb&w=600",
-        description: "Masterplanning materials including business cards and brochures."
+        description: "Animation (3D Workflow) materials including business cards and brochures."
       }
     ],
     features: [
@@ -1027,11 +1027,11 @@ const projects = [
   {
     id: 29,
     title: "Pentagon",
-    category: "Architecture",
+    category: "2D Design Blueprint",
     imgSrc: "https://images.pexels.com/photos/1022936/pexels-photo-1022936.jpeg?auto=compress&cs=tinysrgb&w=600",
     description: "Corporate website design for a consulting firm.",
     detailedDescription: `
-      Pentagon is a corporate Architecture project for a leading consulting firm. The focus was on delivering:
+      Pentagon is a corporate 2D Design Blueprint project for a leading consulting firm. The focus was on delivering:
       - A professional, clean layout that emphasizes the firm's expertise.
       - Integration of interactive elements like service calculators and client testimonials.
       - Optimized loading times and SEO to improve visibility.
@@ -1056,11 +1056,11 @@ const projects = [
   {
     id: 30,
     title: "Laste on Surface",
-    category: "Exterior",
+    category: "2D Design Blueprint",
     imgSrc: "https://images.pexels.com/photos/186537/pexels-photo-186537.jpeg?auto=compress&cs=tinysrgb&w=600",
-    description: "Exterior design for a futuristic space exploration app.",
+    description: "2D Design Blueprint design for a futuristic space exploration app.",
     detailedDescription: `
-      Laste on Surface is a space exploration app that allows users to explore planets and galaxies. The Exterior design focused on:
+      Laste on Surface is a space exploration app that allows users to explore planets and galaxies. The 2D Design Blueprint design focused on:
       - A visually stunning interface with space-themed animations.
       - Intuitive navigation for discovering new planetary systems and celestial objects.
       - Real-time simulation of planetary data for an immersive user experience.

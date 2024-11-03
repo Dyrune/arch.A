@@ -1,6 +1,6 @@
 // src/components/Project1.scss
 .project-page {
-    padding: 200px;
+    padding: 100px 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -531,5 +531,50 @@ ul li {
   }
   .fade-right-section:nth-of-type(3) {
     animation-delay: 1.2s;
+  }
+  
+
+
+  .category-dropdown {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%; /* Adjust width as needed */
+  }
+  
+  .dropdown-icon {
+    color: #555;
+    font-size: 20px; /* Small circle icon */
+  }
+  
+  .dropdown-select {
+    appearance: none;
+    padding: 8px 12px;
+    padding-right: 30px; /* Space for the arrow */
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .dropdown-select:focus {
+    outline: none;
+    border-color: #333;
+  }
+  
+  .dropdown-select::-ms-expand {
+    display: none; /* Hide default arrow on IE */
+  }
+  
+  /* Custom arrow for the dropdown */
+  .category-dropdown::after {
+    content: '▼'; /* Unicode arrow */
+    font-size: 12px;
+    color: #555;
+    right: 10px;
+    pointer-events: none; /* Prevent clicks on the arrow */
   }
   

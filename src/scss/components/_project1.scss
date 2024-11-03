@@ -22,6 +22,10 @@
       margin: 20px 0;
     }
   }
+
+  .image-container.loaded .project-image {
+    opacity: 1;
+  }
   
   .project-section {
     display: flex;
@@ -37,6 +41,7 @@
       
       .project-image {
         width: 50%;  
+        transition: opacity 0.5s ease;
         
         @media (max-width:768px) {
             width: 100%;
@@ -578,3 +583,9 @@ ul li {
     pointer-events: none; /* Prevent clicks on the arrow */
   }
   
+ 
+
+  .fade-in {
+    animation: fadeIn 0.8s ease-in-out forwards;
+    opacity: 1; /* Ensure final state is visible */
+  }

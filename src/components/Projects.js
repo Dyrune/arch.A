@@ -8,10 +8,29 @@ const categories = ["All", "2D Design Blueprint", "3D Designs", "Animation (3D W
 const ProjectPage = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
+  // Re-trigger animations on filter change
   useEffect(() => {
     const cleanupScrollAnimation = initializeScrollAnimation();
-    return () => cleanupScrollAnimation();
-  }, []);
+
+    // Manually reset animation classes on category change
+    const resetAnimations = () => {
+      // Get all elements with the animation classes
+      const elements = document.querySelectorAll('.animation-element');
+
+      elements.forEach((element) => {
+        // Remove and force reflow to restart animation
+        element.classList.remove('slide-left', 'slide-right');
+        void element.offsetWidth; // Trigger reflow
+        element.classList.add('slide-left'); // Reapply the animation class
+      });
+    };
+
+    resetAnimations(); // Trigger reset animations
+
+    return () => {
+      cleanupScrollAnimation();
+    };
+  }, [selectedCategory]); // Run every time selectedCategory changes
 
   // Filter projects based on selected category
   const filteredProjects = selectedCategory === "All"

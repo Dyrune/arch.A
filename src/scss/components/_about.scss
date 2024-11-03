@@ -305,6 +305,12 @@
     font-size: 1rem;
     max-width: 600px;
     text-wrap: wrap;
+    
+  @media (min-width: 480px) {
+    font-size: 0.8rem;
+    max-width: 350px;
+  }
+  
   }
   
   

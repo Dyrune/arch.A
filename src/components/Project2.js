@@ -82,7 +82,7 @@ function Project2() { const navigate = useNavigate();
           
           />
           <div className="project-description">
-            <ul className="fade-right-section">
+            <ul>
                 <li className="fade-right-section">Solitude</li>
                 <li className="fade-right-section">156mm to 3879mm</li>
                 <li className="fade-right-section">Futa, University</li>

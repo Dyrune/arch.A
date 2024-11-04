@@ -58,7 +58,7 @@ function Project1() {
 
   return (
     <div className="project-page fade-section">
-      <h1 className='fade-section'>Project 1</h1>
+      <h1 className='fade-section'>Project 1.</h1>
       <hr className='fade-section'/>
 
 

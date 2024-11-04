@@ -6,7 +6,7 @@ function Project1() {
 
   // Navigation handlers for the buttons
   const goToProject2 = () => {
-    navigate("/project2"); // Adjust this path if necessary
+    navigate("/project2", { state: { key: new Date().getTime() } }); // Pass a unique key
   };
 
   const goToProject4 = () => {

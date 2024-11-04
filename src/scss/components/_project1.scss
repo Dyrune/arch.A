@@ -452,92 +452,58 @@ ul li {
 
 
 
-
-
+/* Base fade-in setup for all sections */
 .fade-section, .fade-left-section, .fade-right-section {
   opacity: 0;
   transition: opacity 1s ease, transform 1s ease; /* Smooth transition */
 }
 
-  @keyframes slideFadeInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(120px); /* Start slightly to the right */
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0); /* Slide in to original position */
-    }
+/* Slide in from right */
+@keyframes slideFadeInRight {
+  0% {
+    transform: translateX(120px); /* Start slightly to the right */
   }
-  
-  .slideFadeInRight {
-    animation: slideFadeInRight 1.5s ease-in-out forwards;
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Slide in to original position */
   }
-  
-  /* Add animations for slideFadeInLeft and slideFadeIn if not already defined */
-  @keyframes slideFadeInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-120px); /* Start slightly to the left */
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0); /* Slide in to original position */
-    }
-  }
-  
-  .slideFadeInLeft {
-    animation: slideFadeInLeft 1.5s ease-in-out forwards;
-  }
-  
-  /* Default fade-in */
-  @keyframes slideFadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  .slideFadeIn {
-    animation: slideFadeIn 1.5s ease-in-out forwards;
-  }
-  
+}
 
+.slideFadeInRight {
+  animation: slideFadeInRight 1.5s ease-in-out forwards;
+}
 
-  .fade-section:nth-of-type(1) {
-    animation-delay: 0.8s;
+/* Slide in from left */
+@keyframes slideFadeInLeft {
+  0% {
+    transform: translateX(-120px); /* Start slightly to the left */
   }
-  .fade-section:nth-of-type(2) {
-    animation-delay: 1s;
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Slide in to original position */
   }
-  .fade-section:nth-of-type(3) {
-    animation-delay: 1.2s;
+}
+
+.slideFadeInLeft {
+  animation: slideFadeInLeft 1s ease-in-out forwards;
+}
+
+/* Default fade-in */
+@keyframes slideFadeIn {
+  100% {
+    opacity: 1;
   }
-  /* Add more as needed */
-  
-  .fade-left-section:nth-of-type(1) {
-    animation-delay: 0.8s;
-  }
-  .fade-left-section:nth-of-type(2) {
-    animation-delay: 1s;
-  }
-  .fade-left-section:nth-of-type(3) {
-    animation-delay: 1.2s;
-  }
-  
-  /* Right-fade sections */
-  .fade-right-section:nth-of-type(1) {
-    animation-delay: 0.8s;
-  }
-  .fade-right-section:nth-of-type(2) {
-    animation-delay: 1s;
-  }
-  .fade-right-section:nth-of-type(3) {
-    animation-delay: 1.2s;
-  }
-  
+}
+
+.slideFadeIn {
+  animation: slideFadeIn 1s ease-in-out forwards;
+}
+
+/* Staggered animation delays */
+.fade-delay-0 { animation-delay: 0s; }
+.fade-delay-1 { animation-delay: 0.2s; }
+.fade-delay-2 { animation-delay: 0.4s; }
+/* Add more as needed */
 
 
   .category-dropdown {

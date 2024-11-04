@@ -1,13 +1,19 @@
 import { useNavigate } from 'react-router-dom';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 
 
 function Project2() { const navigate = useNavigate();
 
-    const handleNavigate = () => {
-      navigate('/project2');
-    };
+     // Navigation handlers for the buttons
+  const goToProject2 = () => {
+    navigate("/project1"); // Adjust this path if necessary
+  };
+
+  const goToProject4 = () => {
+    navigate("/project3"); // Adjust this path if necessary
+  };
+
     
     const [lightboxImage, setLightboxImage] = useState(null);
     const [showLightbox, setShowLightbox] = useState(false);
@@ -26,51 +32,36 @@ function Project2() { const navigate = useNavigate();
 
     
     useEffect(() => {
-      // Function to reset animations
-      const resetAnimations = () => {
-        const animatedElements = document.querySelectorAll('.fade-section, .fade-left-section, .fade-right-section');
-        
-        animatedElements.forEach((element) => {
-          // Remove existing animation classes
-          element.classList.remove('slideFadeIn', 'slideFadeInLeft', 'slideFadeInRight', 'triggered');
-          
-          // Force a reflow to allow animations to restart
-          void element.offsetWidth;
-          
-          // Reapply the animation class based on its original class
-          if (element.classList.contains('fade-left-section')) {
-            element.classList.add('slideFadeInLeft');
-          } else if (element.classList.contains('fade-right-section')) {
-            element.classList.add('slideFadeInRight');
-          } else {
-            element.classList.add('slideFadeIn');
-          }
-        });
-      };
-  
-      // Run the resetAnimations function
-      resetAnimations();
-  
-      // Intersection observer to add the triggered class on scroll
       const observer = new IntersectionObserver(
         (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting && !entry.target.classList.contains('triggered')) {
-              entry.target.classList.add('triggered'); // This activates the CSS animation
+          entries.forEach((entry, index) => {
+            if (entry.isIntersecting && entry.boundingClientRect.top > 0) {
+              if (!entry.target.classList.contains("triggered")) {
+                let animationClass = "slideFadeIn";
+                let delay = `${index * 0.2}s`; // Calculate delay based on index
+    
+                if (entry.target.classList.contains("fade-left-section")) {
+                  animationClass = "slideFadeInLeft";
+                } else if (entry.target.classList.contains("fade-right-section")) {
+                  animationClass = "slideFadeInRight";
+                }
+    
+                entry.target.style.animationDelay = delay; // Set the delay dynamically
+                entry.target.classList.add(animationClass, "triggered");
+              }
             }
           });
         },
         { threshold: 0.1 }
       );
-  
-      const elementsToObserve = document.querySelectorAll('.fade-section, .fade-left-section, .fade-right-section');
-      elementsToObserve.forEach((element) => observer.observe(element));
-  
-      // Cleanup on component unmount
+    
+      const sections = document.querySelectorAll(".fade-section, .fade-left-section, .fade-right-section");
+      sections.forEach((section) => observer.observe(section));
+    
       return () => {
-        elementsToObserve.forEach((element) => observer.unobserve(element));
+        sections.forEach((section) => observer.unobserve(section));
       };
-    }, []); // This runs every time the component mounts
+    }, []);
   
     
     
@@ -255,11 +246,21 @@ function Project2() { const navigate = useNavigate();
 </section>
 
       
-      {/* Navigation Buttons */}
-      <div className="navigation-buttons">
-        <button className="nav-button left-button fade-section">Go to Project 4</button>
-        <button className="nav-button right-button fade-section" onClick={handleNavigate}>Go to Project 2</button>
-      </div>
+          {/* Navigation Buttons */}
+          <div className="navigation-buttons">
+          <button
+            className="nav-button left-button fade-section"
+            onClick={goToProject4}
+          >
+            Go to Project 1
+          </button>
+          <button
+            className="nav-button right-button fade-section"
+            onClick={goToProject2}
+          >
+            Go to Project 3
+          </button>{" "}
+        </div>
       </section>
         {/* Lightbox Overlay */}
         {showLightbox && (

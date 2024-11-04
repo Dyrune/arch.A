@@ -26,36 +26,52 @@ function Project2() { const navigate = useNavigate();
 
     
     useEffect(() => {
+      // Function to reset animations
+      const resetAnimations = () => {
+        const animatedElements = document.querySelectorAll('.fade-section, .fade-left-section, .fade-right-section');
+        
+        animatedElements.forEach((element) => {
+          // Remove existing animation classes
+          element.classList.remove('slideFadeIn', 'slideFadeInLeft', 'slideFadeInRight', 'triggered');
+          
+          // Force a reflow to allow animations to restart
+          void element.offsetWidth;
+          
+          // Reapply the animation class based on its original class
+          if (element.classList.contains('fade-left-section')) {
+            element.classList.add('slideFadeInLeft');
+          } else if (element.classList.contains('fade-right-section')) {
+            element.classList.add('slideFadeInRight');
+          } else {
+            element.classList.add('slideFadeIn');
+          }
+        });
+      };
+  
+      // Run the resetAnimations function
+      resetAnimations();
+  
+      // Intersection observer to add the triggered class on scroll
       const observer = new IntersectionObserver(
         (entries) => {
-          entries.forEach((entry, index) => {
-            if (entry.isIntersecting && entry.boundingClientRect.top > 0) {
-              if (!entry.target.classList.contains("triggered")) {
-                let animationClass = "slideFadeIn";
-                let delay = `${index * 0.2}s`; // Calculate delay based on index
-    
-                if (entry.target.classList.contains("fade-left-section")) {
-                  animationClass = "slideFadeInLeft";
-                } else if (entry.target.classList.contains("fade-right-section")) {
-                  animationClass = "slideFadeInRight";
-                }
-    
-                entry.target.style.animationDelay = delay; // Set the delay dynamically
-                entry.target.classList.add(animationClass, "triggered");
-              }
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && !entry.target.classList.contains('triggered')) {
+              entry.target.classList.add('triggered'); // This activates the CSS animation
             }
           });
         },
         { threshold: 0.1 }
       );
-    
-      const sections = document.querySelectorAll(".fade-section, .fade-left-section, .fade-right-section");
-      sections.forEach((section) => observer.observe(section));
-    
+  
+      const elementsToObserve = document.querySelectorAll('.fade-section, .fade-left-section, .fade-right-section');
+      elementsToObserve.forEach((element) => observer.observe(element));
+  
+      // Cleanup on component unmount
       return () => {
-        sections.forEach((section) => observer.unobserve(section));
+        elementsToObserve.forEach((element) => observer.unobserve(element));
       };
-    }, []);
+    }, []); // This runs every time the component mounts
+  
     
     
   return (

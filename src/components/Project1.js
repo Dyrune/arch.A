@@ -57,7 +57,7 @@ function Project1() {
   }, []);
 
   return (
-    <div className="project-page">
+    <div className="project-page fade-section">
       <h1 className='fade-section'>Project 1</h1>
       <hr className='fade-section'/>
 
@@ -68,7 +68,7 @@ function Project1() {
           <img 
             src="https://images.pexels.com/photos/6631793/pexels-photo-6631793.jpeg" 
             alt="Project 1" 
-            className="project-image fade-section"    
+            className="project-image"    
             onClick={() => handleImageClick("https://images.pexels.com/photos/6631793/pexels-photo-6631793.jpeg")}
           
           />

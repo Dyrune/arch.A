@@ -59,7 +59,7 @@ function Project1() {
   return (
     <div className="project-page">
       <h1 className='fade-section'>Project 1</h1>
-      <hr />
+      <hr className='fade-section'/>
 
 
 
@@ -89,13 +89,13 @@ function Project1() {
       
       <section className="inspiration-section">
         <h2 className='fade-section'>Inspiration</h2>
-        <hr />
+        <hr className='fade-section'/>
         <div className="inspiration-row">
           <div className="inspiration-images">
             <img src="https://images.unsplash.com/photo-1730259692163-e2cf3d547aab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"             onClick={() => handleImageClick("https://images.unsplash.com/photo-1730259692163-e2cf3d547aab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")}
-          alt="Inspiration 1" />
+  className='fade-section'        alt="Inspiration 1" />
             <img src="https://images.unsplash.com/photo-1730170788262-152f85b25171?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"             onClick={() => handleImageClick("https://images.unsplash.com/photo-1730170788262-152f85b25171?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")}
-          alt="Inspiration 2" />
+       className='fade-section'   alt="Inspiration 2" />
           </div>
           <div className="inspiration-description">
             <p className='fade-section'>My two artist inspirations was Auguste Rodin and Thomas Gainsborough. Rodin was a sculptor that made a multitude of works based on the human body, one being "Study of a Hand". Here Rodin used plaster to do a physical study a hand. There is rough and smooth qualities about the sculpture that advances the texture. Additionally the almost pained  
@@ -105,24 +105,24 @@ function Project1() {
         <div className="inspiration-row" id='ir'>
           <img src="https://images.unsplash.com/photo-1730170788236-5b872dcea71d?q=80&w=1912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"             
           onClick={() => handleImageClick("https://images.unsplash.com/photo-1730170788236-5b872dcea71d?q=80&w=1912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")}
-          alt="Inspiration Image" />
+          className='fade-section'     alt="Inspiration Image" />
           
           <div className="inspiration-description"><p className='fade-section'>My two artist inspirations was Auguste Rodin and Thomas Gainsborough. Rodin was a sculptor that made a multitude of works based on the human body, one being "Study of a Hand". Here Rodin used plaster to do a physical study a hand. There is rough and smooth qualities about the sculpture that advances the texture. Additionally the almost pained  
             Gainsborough's painting is a rendition of another artist'sI</p>
             </div>   <img src="https://images.unsplash.com/photo-1730170787479-ca21524efb7c?q=80&w=1907&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"             
-            onClick={() => handleImageClick("https://images.unsplash.com/photo-1730170787479-ca21524efb7c?q=80&w=1907&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")}
+       className='fade-section'     onClick={() => handleImageClick("https://images.unsplash.com/photo-1730170787479-ca21524efb7c?q=80&w=1907&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")}
           alt="Inspiration Left" />
             </div>
         <div className="inspiration-row">
          <img src="https://images.unsplash.com/photo-1730170787497-79368609170b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"            
-         onClick={() => handleImageClick("https://images.unsplash.com/photo-1730170787497-79368609170b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")}
+      className='fade-section'   onClick={() => handleImageClick("https://images.unsplash.com/photo-1730170787497-79368609170b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")}
            alt="Inspiration Right" />
         </div>
       </section>
       
       <section className="planning-section">
         <h2 className='fade-section'>Planning</h2>
-        <hr />
+        <hr className='fade-section'/>
         <div className="planning-row">
           <div className="planning-description">
             <p className='fade-section'>To plan I also took a reference photo to base my painting off of. I wanted to present myself with a static and blank face as not to allude to any emotions or thoughts. After increasing the contrast of the picture I added a grid over the my main reference so I could get my proportions and features correct. I then played around with how different backgrounds and different clothes might affect the overall feel of the work. I decided to continue with the solid dark clothes with contrasting white background to match the plaster hands.</p>
@@ -158,10 +158,10 @@ function Project1() {
             ​Combining painting and sculpture is not something I have done. One of the struggles I came across when creating this work was making sure the plaster hands would lay how I wanted them to after attaching. As the hands are heavy compared to the canvas the weighed it down significantly when attached. To counteract this I attached the hands more at their center point of gravity closer to the attachment point of the canvas.</p>
           </div>
           <div className='hgr'> <img src="https://images.unsplash.com/photo-1699868943805-3a6b9e152366?q=80&w=1896&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-           onClick={() => handleImageClick("https://images.unsplash.com/photo-1699868943805-3a6b9e152366?q=80&w=1896&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")}
+          className='fade-section' onClick={() => handleImageClick("https://images.unsplash.com/photo-1699868943805-3a6b9e152366?q=80&w=1896&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")}
            alt="Planning Image 3" />
           <img src="https://plus.unsplash.com/premium_photo-1674815329488-c4fc6bf4ced8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-           onClick={() => handleImageClick("https://plus.unsplash.com/premium_photo-1674815329488-c4fc6bf4ced8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")}
+        className='fade-section'   onClick={() => handleImageClick("https://plus.unsplash.com/premium_photo-1674815329488-c4fc6bf4ced8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")}
            alt="Planning Image 6" />
           </div>
              </div>
@@ -170,7 +170,7 @@ function Project1() {
          {/* Reflection Section */}
       <section className="reflection-section">
         <h2>Reflection</h2>
-        <hr />
+        <hr className='fade-section'/>
         <div className="reflection-content">
           <div className="reflection-description fade-section">
             <p>Overall I am very pleased with how this work turned out. While I would have liked to add one more hand and made the lips and jaw more accurate to my own features, I am proud of my own improvement since my last self-portrait. Here I show my growth in attention to detail and accuracy. Even though I did struggle with the painting aspect with making it true to real life in proportion and hue, the final work demonstrates my own advances in art making. I also think that this work is one of my most personal ones and one that I felt very connected to while making. Additionally I think my connections to artists Rodin and 
@@ -185,7 +185,7 @@ function Project1() {
      {/* Critique Section */}
 <section className="critique-section">
   <h2>Critique</h2>
-  <hr />
+  <hr className='fade-section'/>
   <div className="critique-content">
     {/* First Row: Differences on Left, Image on Right */}
     <div className="critique-row">

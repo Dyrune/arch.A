@@ -213,7 +213,7 @@ const projects = [
       },{
         id: 6,
         title: "Tech Innovators Hub",
-        category: "Web Development",
+        category: "3D Designs",
         imgSrc: "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=600",
         description: "A custom web development project for Tech Innovators Hub, creating a platform for tech enthusiasts and startups.",
         detailedDescription: `
@@ -254,7 +254,7 @@ const projects = [
       {
         id: 7,
         title: "Ecovative",
-        category: "Mobile App Design",
+        category: "3D Designs",
         imgSrc: "https://images.pexels.com/photos/4064838/pexels-photo-4064838.jpeg?auto=compress&cs=tinysrgb&w=600",
         description: "Mobile app design project for Ecovative, a sustainable products company focusing on eco-friendly materials.",
         detailedDescription: `
@@ -295,7 +295,7 @@ const projects = [
       {
         id: 8,
         title: "Greenfields Agency",
-        category: "Digital Marketing",
+        category: "3D Designs",
         imgSrc: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600",
         description: "A full-scale digital marketing campaign for Greenfields Agency, aimed at boosting online presence and lead generation.",
         detailedDescription: `
@@ -336,7 +336,7 @@ const projects = [
       {
         id: 9,
         title: "Hype Lounge",
-        category: "Animation (3D Workflow) & Identity",
+        category: "Animation (3D Workflow)",
         imgSrc: "https://images.pexels.com/photos/4065156/pexels-photo-4065156.jpeg?auto=compress&cs=tinysrgb&w=600",
         description: "A complete Animation (3D Workflow) and identity project for Hype Lounge, a new luxury nightlife brand.",
         detailedDescription: `

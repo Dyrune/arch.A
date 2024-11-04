@@ -14,14 +14,22 @@ const ProjectPage = () => {
 
     // Manually reset animation classes on category change
     const resetAnimations = () => {
-      // Get all elements with the animation classes
-      const elements = document.querySelectorAll('.animation-element');
+      // Get all elements with the animation classes in each column
+      const leftColumnElements = document.querySelectorAll('.project-block-a .animation-element');
+      const rightColumnElements = document.querySelectorAll('.project-block-b .animation-element');
 
-      elements.forEach((element) => {
-        // Remove and force reflow to restart animation
+      // Apply `slide-left` animation for left column
+      leftColumnElements.forEach((element) => {
         element.classList.remove('slide-left', 'slide-right');
-        void element.offsetWidth; // Trigger reflow
-        element.classList.add('slide-left'); // Reapply the animation class
+        void element.offsetWidth; // Trigger reflow to reset animation
+        element.classList.add('slide-left'); // Reapply the left animation class
+      });
+
+      // Apply `slide-right` animation for right column
+      rightColumnElements.forEach((element) => {
+        element.classList.remove('slide-left', 'slide-right');
+        void element.offsetWidth; // Trigger reflow to reset animation
+        element.classList.add('slide-right'); // Reapply the right animation class
       });
     };
 

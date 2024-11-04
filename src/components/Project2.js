@@ -1,18 +1,10 @@
 import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom"; // Add this import
 import React, { useEffect, useState } from 'react';
 
 
 
-function Project2() { const navigate = useNavigate();
-
-     // Navigation handlers for the buttons
-  const goToProject2 = () => {
-    navigate("/project1"); // Adjust this path if necessary
-  };
-
-  const goToProject4 = () => {
-    navigate("/project3"); // Adjust this path if necessary
-  };
+function Project2() { 
 
     
     const [lightboxImage, setLightboxImage] = useState(null);
@@ -248,18 +240,12 @@ function Project2() { const navigate = useNavigate();
       
           {/* Navigation Buttons */}
           <div className="navigation-buttons">
-          <button
-            className="nav-button left-button fade-section"
-            onClick={goToProject4}
-          >
-            Go to Project 1
-          </button>
-          <button
-            className="nav-button right-button fade-section"
-            onClick={goToProject2}
-          >
-            Go to Project 3
-          </button>{" "}
+          <Link to="/project1">
+  <button className="nav-button right-button fade-section">Go to Project 2</button>
+</Link>
+        <Link to="/project3">
+          <button className="nav-button left-button fade-section">Go to Project 4</button>
+        </Link>
         </div>
       </section>
         {/* Lightbox Overlay */}

@@ -1,17 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom"; // Add this import
+
 
 function Project1() {
-  const navigate = useNavigate();
-
-  // Navigation handlers for the buttons
-  const goToProject2 = () => {
-    navigate("/project2", { state: { key: new Date().getTime() } }); // Pass a unique key
-  };
-
-  const goToProject4 = () => {
-    navigate("/project4"); // Adjust this path if necessary
-  };
 
   const [lightboxImage, setLightboxImage] = useState(null);
   const [showLightbox, setShowLightbox] = useState(false);
@@ -441,18 +433,12 @@ function Project1() {
 
         {/* Navigation Buttons */}
         <div className="navigation-buttons">
-          <button
-            className="nav-button left-button fade-section"
-            onClick={goToProject4}
-          >
-            Go to Project 4
-          </button>
-          <button
-            className="nav-button right-button fade-section"
-            onClick={goToProject2}
-          >
-            Go to Project 2
-          </button>{" "}
+        <Link to="/project2">
+  <button className="nav-button right-button fade-section">Go to Project 2</button>
+</Link>
+        <Link to="/project4">
+          <button className="nav-button left-button fade-section">Go to Project 4</button>
+        </Link>
         </div>
       </section>
       {/* Lightbox Overlay */}
